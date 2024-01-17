@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Internal.Codebase.BalloonLogic
 {
@@ -10,12 +11,12 @@ namespace Internal.Codebase.BalloonLogic
         
         private BalloonPool<Balloon> balloonPool;
 
-        [SerializeField] private Balloon balloonPrefab;
+        [SerializeField] private Balloon balloon;
         [SerializeField] private Transform balloonContainer;
 
         private void Start()
         {
-            balloonPool = new BalloonPool<Balloon>(balloonPrefab, balloonContainer, PoolSize, true);
+            balloonPool = new BalloonPool<Balloon>(balloon, balloonContainer, PoolSize, true);
 
             StartCoroutine(SpawnBalloons());
         }

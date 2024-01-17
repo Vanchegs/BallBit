@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920c6aef76998e445876d05afd534ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balloonPrefab: {fileID: 5741854520608734112, guid: 3cdbdbc0344abcd4fa9222f8e2614083, type: 3}
+  balloon: {fileID: 5741854520608734112, guid: 3cdbdbc0344abcd4fa9222f8e2614083, type: 3}
   balloonContainer: {fileID: 176813571}
 --- !u!1 &1293642552
 GameObject:
