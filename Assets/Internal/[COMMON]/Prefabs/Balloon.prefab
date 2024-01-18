@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d35d0bbf684f17af9f1a2ee2035e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonFactory: {fileID: 6107583890436715771, guid: 086b2588b1edee9468e3a30f75c963bb, type: 3}
   balloonTransform: {fileID: 1677888982211179046}
 --- !u!95 &-9028727697541230065
 Animator:

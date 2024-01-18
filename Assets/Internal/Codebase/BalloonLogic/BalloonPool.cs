@@ -45,6 +45,15 @@ namespace Internal.Codebase.BalloonLogic
 
             return newObject;
         }
+        
+        public void ReturnToPool(T target)
+        {
+            if (target != null)
+            {
+                target.gameObject.SetActive(false);
+                target.transform.position = ballPoolContainer.position;
+            }
+        }
 
         public bool TryGetFree(out T element)
         {

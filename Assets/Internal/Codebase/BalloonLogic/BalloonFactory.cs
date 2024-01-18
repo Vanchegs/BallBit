@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Internal.Codebase.BalloonLogic
 {
@@ -8,7 +7,7 @@ namespace Internal.Codebase.BalloonLogic
     {
         private const byte PoolSize = 50;
         private const int SpawnRate = 1;
-        
+
         private BalloonPool<Balloon> balloonPool;
 
         [SerializeField] private Balloon balloon;
