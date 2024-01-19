@@ -1,3 +1,4 @@
+using Internal.Codebase.BalloonLogic.BalloonBitLogic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,12 +9,16 @@ namespace Internal.Codebase.BalloonLogic
         private const float ConstantSpeed = 0.05f;
 
         private BalloonFactory balloonFactory;
-
+        
+        [SerializeField] private ClickDetection clickDetection;
         [SerializeField] private Transform balloonTransform;
 
         private void Start()
         {
             balloonFactory = FindObjectOfType<BalloonFactory>();
+            clickDetection = GetComponent<ClickDetection>();
+            
+            clickDetection.onClick.AddListener(BalloonBit);
             
             RandomizationStartPosition();
         }
@@ -22,6 +27,12 @@ namespace Internal.Codebase.BalloonLogic
         {
             ConstantMoveUp();
             CheckDeleteHeight();
+        }
+        
+        public void BalloonBit() 
+        { 
+            balloonFactory.BalloonPool.ReturnToPool(this); 
+            RandomizationStartPosition();
         }
 
         private void ConstantMoveUp()
@@ -36,6 +47,8 @@ namespace Internal.Codebase.BalloonLogic
             balloonFactory.BalloonPool.ReturnToPool(this);
             RandomizationStartPosition();
         }
+
+        
 
         private void RandomizationStartPosition()
         {
