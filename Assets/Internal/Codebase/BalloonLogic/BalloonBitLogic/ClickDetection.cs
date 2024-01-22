@@ -7,9 +7,6 @@ namespace Internal.Codebase.BalloonLogic.BalloonBitLogic
     {
         public UnityEvent onClick;
 
-        private void OnMouseDown()
-        {
-            onClick.Invoke();
-        }
+        private void OnMouseDown() => onClick.Invoke();
     }
 }

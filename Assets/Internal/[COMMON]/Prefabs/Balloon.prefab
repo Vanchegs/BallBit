@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4182939779226682775}
   - component: {fileID: 5741854520608734112}
   - component: {fileID: 5347891349244722902}
+  - component: {fileID: 3040257852207516093}
   - component: {fileID: -9028727697541230065}
   - component: {fileID: -8820219128293537068}
   m_Layer: 0
@@ -117,9 +118,10 @@ MonoBehaviour:
   onClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5741854520608734112}
-        m_TargetAssemblyTypeName: Internal.Codebase.BalloonLogic.Balloon, Assembly-CSharp
-        m_MethodName: BalloonBit
+      - m_Target: {fileID: 3040257852207516093}
+        m_TargetAssemblyTypeName: Internal.Codebase.BalloonLogic.BalloonAnimator,
+          Assembly-CSharp
+        m_MethodName: BalloonBitAnim
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -129,6 +131,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3040257852207516093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306850780561335419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61738242361a40c5a043d5ba02bc8636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &-9028727697541230065
 Animator:
   serializedVersion: 5
@@ -182,6 +196,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.28410316}
+  m_Offset: {x: 0, y: 0.29716522}
   serializedVersion: 2
-  m_Radius: 0.50033355
+  m_Radius: 0.5308117
