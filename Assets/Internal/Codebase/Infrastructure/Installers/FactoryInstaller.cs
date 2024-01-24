@@ -7,7 +7,7 @@ namespace Internal.Codebase.Infrastructure.Installers
     {
         public override void InstallBindings()
         {
-            Container.Bind<IBalloonFactory>().To<BalloonFactory>().AsSingle();
+            Container.Bind<IBalloonFactory>().To<BalloonFactory>().FromNew().AsSingle();
         }
     }
 }

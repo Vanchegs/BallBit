@@ -6,11 +6,11 @@ namespace Internal.Codebase.Infrastructure.Installers
 {
     public class ConfigInstallers : MonoInstaller
     {
-        [SerializeField] private BalloonsConfig balloonsConfig;
+        [SerializeField] private BalloonsConfig BalloonsConfig;
         
         public override void InstallBindings()
         {
-            Container.Bind<BalloonsConfig>().FromInstance(balloonsConfig).AsSingle();
+            Container.Bind<BalloonsConfig>().FromInstance(BalloonsConfig).AsSingle();
         }
     }
 }

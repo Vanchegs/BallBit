@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af49fb25751431a80e408cf02e1279c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balloonsConfig: {fileID: 11400000, guid: db5caa0e844750549b55d9192e228e9c, type: 2}
+  BalloonsConfig: {fileID: 11400000, guid: db5caa0e844750549b55d9192e228e9c, type: 2}
 --- !u!114 &6617227577425746019
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ namespace Internal.Codebase.BalloonLogic
         private BalloonPool<BangBalloon> bangBalloonPool;
 
         [Inject]
-        public BalloonFactory(BalloonsConfig balloonsConfig)
+        public void Constructor(BalloonsConfig balloonsConfig)
         {
             this.balloonsConfig = balloonsConfig;
             
@@ -25,6 +25,8 @@ namespace Internal.Codebase.BalloonLogic
 
         public void InitPools()
         {
+            Debug.Log(balloonsConfig);
+            
             balloonPool = new BalloonPool<Balloon>(balloonsConfig.normalBalloonPrefab,
                 balloonsConfig.spawnPoint, balloonsConfig.quantity, true);
             bangBalloonPool = new BalloonPool<BangBalloon>(balloonsConfig.bangBalloonPrefab,
