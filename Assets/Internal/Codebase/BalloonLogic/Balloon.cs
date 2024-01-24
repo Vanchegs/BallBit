@@ -30,7 +30,7 @@ namespace Internal.Codebase.BalloonLogic
 
         public void BalloonBit()
         {
-            balloonFactory.BalloonFactory.BalloonPool.ReturnToPool(this);
+            balloonFactory.BalloonFactory.ReturnBalloonToPool(this);
             counter.CountIncrease();
             RandomizationStartPosition();
         }
@@ -44,7 +44,7 @@ namespace Internal.Codebase.BalloonLogic
         public void CheckDeleteHeight()
         {
             if (!(balloonTransform.position.y > 10)) return;
-            balloonFactory.BalloonFactory.BalloonPool.ReturnToPool(this);
+            balloonFactory.BalloonFactory.ReturnBalloonToPool(this);
             RandomizationStartPosition();
         }
 

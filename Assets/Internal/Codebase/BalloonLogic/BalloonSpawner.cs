@@ -8,23 +8,25 @@ namespace Internal.Codebase.BalloonLogic
     {
         private const int BangBalloonsSpawnRate = 3;
 
-        public BalloonFactory BalloonFactory;
+        public IBalloonFactory BalloonFactory;
 
         private const int BalloonsSpawnRate = 1;
 
         [Inject]
-        public void Constructor(BalloonFactory balloonFactory) =>
+        public void Constructor(IBalloonFactory balloonFactory) =>
             BalloonFactory = balloonFactory;
 
         private void Start()
         {
+            StartCoroutine(SpawnBalloons());
+            StartCoroutine(SpawnBangBalloons());
         }
 
         public IEnumerator SpawnBalloons()
         {
             while (true)
             {
-                BalloonFactory.BalloonPool.GetFree();
+                BalloonFactory.GetFreeBalloon(typeof(Balloon));
                 yield return new WaitForSeconds(BalloonsSpawnRate);
             }
         }
@@ -33,7 +35,7 @@ namespace Internal.Codebase.BalloonLogic
         {
             while (true)
             {
-                BalloonFactory.BangBalloonPool.GetFree();
+                BalloonFactory.GetFreeBalloon(typeof(BangBalloon));
                 yield return new WaitForSeconds(BangBalloonsSpawnRate);
             }
         }
