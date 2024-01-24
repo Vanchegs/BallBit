@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic
 {
-    public class BalloonFactory : MonoBehaviour
+    public class BalloonFactory : MonoBehaviour, IBalloonFactory
     {
         private const byte PoolSize = 20;
         private const int BangBalloonsSpawnRate = 3;
@@ -26,7 +26,7 @@ namespace Internal.Codebase.BalloonLogic
             StartCoroutine(SpawnBangBalloons());
         }
 
-        private IEnumerator SpawnBalloons()
+        public IEnumerator SpawnBalloons()
         {
             while (true)
             {
@@ -35,7 +35,7 @@ namespace Internal.Codebase.BalloonLogic
             }
         }
 
-        private IEnumerator SpawnBangBalloons()
+        public IEnumerator SpawnBangBalloons()
         {
             while (true)
             {
