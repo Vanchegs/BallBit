@@ -5,8 +5,8 @@ namespace Internal.Codebase.BalloonLogic.BalloonBitLogic
 {
     public class ClickDetection : MonoBehaviour
     {
-        public UnityEvent onClick;
+        [HideInInspector] public UnityEvent onClick;
 
-        private void OnMouseDown() => onClick.Invoke();
+        public void OnMouseDown() => onClick.Invoke();
     }
 }

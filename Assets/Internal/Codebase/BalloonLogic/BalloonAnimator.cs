@@ -1,3 +1,4 @@
+using Internal.Codebase.BalloonLogic.BalloonBitLogic;
 using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic
@@ -6,13 +7,15 @@ namespace Internal.Codebase.BalloonLogic
     {
         private static readonly int IsClicked = Animator.StringToHash("IsClicked");
         
-        private Balloon balloon;
         private Animator balloonAnimator;
+        private ClickDetection clickDetector;
 
         private void Start()
         {
-            balloon = GetComponent<Balloon>();
             balloonAnimator = GetComponent<Animator>();
+            clickDetector = GetComponent<ClickDetection>();
+            
+            clickDetector.onClick.AddListener(BalloonBitAnim);
         }
 
         public void BalloonBitAnim() => balloonAnimator.SetTrigger(IsClicked);

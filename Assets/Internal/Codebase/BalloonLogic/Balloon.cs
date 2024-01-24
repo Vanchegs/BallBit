@@ -1,21 +1,23 @@
-using System.Threading.Tasks;
-using Internal.Codebase.BalloonLogic.BalloonBitLogic;
+using Internal.Codebase.CounterLogic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Internal.Codebase.BalloonLogic
 {
-    public class Balloon : MonoBehaviour
+    public class Balloon : MonoBehaviour, IBalloon
     {
         private const float ConstantSpeed = 0.05f;
 
         private BalloonFactory balloonFactory;
-        
-        [SerializeField] private Transform balloonTransform;
+        private Transform balloonTransform;
+        private Counter counter;
 
         private void Start()
         {
             balloonFactory = FindObjectOfType<BalloonFactory>();
+            counter = FindObjectOfType<Counter>();
+
+            balloonTransform = GetComponent<Transform>();
             
             RandomizationStartPosition();
         }
@@ -26,26 +28,27 @@ namespace Internal.Codebase.BalloonLogic
             CheckDeleteHeight();
         }
 
-        private void BalloonBit()
+        public void BalloonBit()
         {
             balloonFactory.BalloonPool.ReturnToPool(this);
+            counter.CountIncrease();
             RandomizationStartPosition();
         }
 
-        private void ConstantMoveUp()
+        public void ConstantMoveUp()
         {
             var input = new Vector3(0, ConstantSpeed, 0);
             balloonTransform.Translate(input);
         }
 
-        private void CheckDeleteHeight()
+        public void CheckDeleteHeight()
         {
             if (!(balloonTransform.position.y > 10)) return;
             balloonFactory.BalloonPool.ReturnToPool(this);
             RandomizationStartPosition();
         }
-        
-        private void RandomizationStartPosition()
+
+        public void RandomizationStartPosition()
         {
             var xAxis = Random.Range(-8, 8);
             balloonTransform.transform.Translate(new Vector3(xAxis, 0, 0));
