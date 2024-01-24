@@ -10,8 +10,8 @@ namespace Internal.Codebase.BalloonLogic
         private BalloonsConfig balloonsConfig;
         private Transform balloonContainer;
 
-        public BalloonPool<Balloon> BalloonPool;
-        public BalloonPool<BangBalloon> BangBalloonPool;
+        private BalloonPool<Balloon> balloonPool;
+        private BalloonPool<BangBalloon> bangBalloonPool;
 
         [Inject]
         public BalloonFactory(BalloonsConfig balloonsConfig)
@@ -25,28 +25,28 @@ namespace Internal.Codebase.BalloonLogic
 
         public void InitPools()
         {
-            BalloonPool = new BalloonPool<Balloon>(balloonsConfig.normalBalloonPrefab,
+            balloonPool = new BalloonPool<Balloon>(balloonsConfig.normalBalloonPrefab,
                 balloonsConfig.spawnPoint, balloonsConfig.quantity, true);
-            BangBalloonPool = new BalloonPool<BangBalloon>(balloonsConfig.bangBalloonPrefab,
+            bangBalloonPool = new BalloonPool<BangBalloon>(balloonsConfig.bangBalloonPrefab,
                 balloonsConfig.spawnPoint, balloonsConfig.quantity, true);
         }
 
         public void DisableAllPools()
         {
-            BalloonPool.DisableAll();
-            BangBalloonPool.DisableAll();
+            balloonPool.DisableAll();
+            bangBalloonPool.DisableAll();
         }
 
         public void GetFreeBalloon(Type typeOfBalloon)
         {
             if (typeOfBalloon == typeof(Balloon))
-                BalloonPool.GetFree();
+                balloonPool.GetFree();
             else if (typeOfBalloon == typeof(BangBalloon)) 
-                BangBalloonPool.GetFree();
+                bangBalloonPool.GetFree();
         }
 
-        public void ReturnBalloonToPool(Balloon balloon) => BalloonPool.ReturnToPool(balloon);
+        public void ReturnBalloonToPool(Balloon balloon) => balloonPool.ReturnToPool(balloon);
 
-        public void ReturnBangBalloonToPool(BangBalloon bangBalloon) => BangBalloonPool.ReturnToPool(bangBalloon);
+        public void ReturnBangBalloonToPool(BangBalloon bangBalloon) => bangBalloonPool.ReturnToPool(bangBalloon);
     }
 }
