@@ -1,36 +1,30 @@
 using System.Collections;
 using UnityEngine;
+using Zenject;
 
 namespace Internal.Codebase.BalloonLogic
 {
     public class BalloonSpawner : MonoBehaviour
     {
-        private const byte PoolSize = 20;
         private const int BangBalloonsSpawnRate = 3;
 
-        public BalloonPool<Balloon> BalloonPool;
-        public BalloonPool<BangBalloon> BangBalloonPool;
+        public BalloonFactory BalloonFactory;
 
         private const int BalloonsSpawnRate = 1;
-        
-        [SerializeField] private Balloon balloon;
-        [SerializeField] private BangBalloon bangBalloon;
-        [SerializeField] private Transform balloonContainer;
+
+        [Inject]
+        public void Constructor(BalloonFactory balloonFactory) =>
+            BalloonFactory = balloonFactory;
 
         private void Start()
         {
-            BalloonPool = new BalloonPool<Balloon>(balloon, balloonContainer, PoolSize, true);
-            BangBalloonPool = new BalloonPool<BangBalloon>(bangBalloon, balloonContainer, PoolSize, true);
-
-            StartCoroutine(SpawnBalloons());
-            StartCoroutine(SpawnBangBalloons());
         }
 
         public IEnumerator SpawnBalloons()
         {
             while (true)
             {
-                BalloonPool.GetFree();
+                BalloonFactory.BalloonPool.GetFree();
                 yield return new WaitForSeconds(BalloonsSpawnRate);
             }
         }
@@ -39,7 +33,7 @@ namespace Internal.Codebase.BalloonLogic
         {
             while (true)
             {
-                BangBalloonPool.GetFree();
+                BalloonFactory.BangBalloonPool.GetFree();
                 yield return new WaitForSeconds(BangBalloonsSpawnRate);
             }
         }

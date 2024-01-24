@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7811356786153233756}
   - component: {fileID: 8169721291011273931}
+  - component: {fileID: 5901080700727113227}
+  - component: {fileID: -1881768719585900695}
   m_Layer: 0
   m_Name: ProjectContext
   m_TagString: Untagged
@@ -45,7 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scriptableObjectInstallers: []
-  _monoInstallers: []
+  _monoInstallers:
+  - {fileID: 5901080700727113227}
+  - {fileID: -1881768719585900695}
   _installerPrefabs: []
   _parentNewObjectsUnderContext: 1
   _editorReflectionBakingCoverageMode: 0
@@ -60,3 +64,28 @@ MonoBehaviour:
       _missingHandlerDefaultResponse: 2
       _requireStrictUnsubscribe: 0
       _defaultAsyncTickPriority: 1
+--- !u!114 &5901080700727113227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587064487574204876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af49fb25751431a80e408cf02e1279c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloonsConfig: {fileID: 11400000, guid: db5caa0e844750549b55d9192e228e9c, type: 2}
+--- !u!114 &-1881768719585900695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587064487574204876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed8530eff7540019ddbbea9169f4f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
