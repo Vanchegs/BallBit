@@ -8,13 +8,13 @@ namespace Internal.Codebase.BalloonLogic
     {
         private const float ConstantSpeed = 0.05f;
 
-        private BalloonFactory balloonFactory;
+        private BalloonSpawner balloonFactory;
         private Transform balloonTransform;
         private Counter counter;
 
         private void Start()
         {
-            balloonFactory = FindObjectOfType<BalloonFactory>();
+            balloonFactory = FindObjectOfType<BalloonSpawner>();
             counter = FindObjectOfType<Counter>();
 
             balloonTransform = GetComponent<Transform>();

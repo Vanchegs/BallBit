@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb9c0f7d31634647a76bb1f22ea516f, type: 3}
+  m_Name: BangBalloonConfig
+  m_EditorClassIdentifier: 
+  BalloonPrefab: {fileID: 8887544398954925082, guid: 1830c06c25e62554a9f9307f3efe121c, type: 3}
