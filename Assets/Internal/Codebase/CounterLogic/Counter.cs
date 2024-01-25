@@ -21,11 +21,11 @@ namespace Internal.Codebase.CounterLogic
         {
             var randomValueChange = Random.Range(-10, 10);
             
-            if(Count - randomValueChange >= 0)
-                Count--;
-            else
-                Count = 0;
+            Count =+ randomValueChange;
 
+            if (Count < 0)
+                Count = 0;
+            
             countText.text = $"{Count}";
         }
     }
