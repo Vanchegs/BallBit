@@ -1,35 +1,30 @@
 using System;
+using Internal.Codebase.BalloonLogic.Balloons;
 using Internal.Codebase.BalloonLogic.BalloonsConfigs;
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
-using Zenject;
 
 namespace Internal.Codebase.BalloonLogic
 {
     public class BalloonFactory : IBalloonFactory
     {
         private BalloonsConfig balloonsConfig;
-        private Transform balloonContainer;
 
         private BalloonPool<Balloon> balloonPool;
-        private BalloonPool<BangBalloon> bangBalloonPool;
+        private BalloonPool<Balloon> bangBalloonPool;
 
-        [Inject]
-        public void Constructor(BalloonsConfig balloonsConfig)
+        public BalloonFactory(BalloonsConfig balloonsConfig)
         {
             this.balloonsConfig = balloonsConfig;
-            
-            InitPools();
-            
-            Debug.Log("Лох");
         }
-
+        
         public void InitPools()
         {
             Debug.Log(balloonsConfig);
             
             balloonPool = new BalloonPool<Balloon>(balloonsConfig.normalBalloonPrefab,
                 balloonsConfig.spawnPoint, balloonsConfig.quantity, true);
-            bangBalloonPool = new BalloonPool<BangBalloon>(balloonsConfig.bangBalloonPrefab,
+            bangBalloonPool = new BalloonPool<Balloon>(balloonsConfig.bangBalloonPrefab,
                 balloonsConfig.spawnPoint, balloonsConfig.quantity, true);
         }
 
@@ -39,16 +34,14 @@ namespace Internal.Codebase.BalloonLogic
             bangBalloonPool.DisableAll();
         }
 
-        public void GetFreeBalloon(Type typeOfBalloon)
+        public void GetFreeBalloon(string typeOfBalloon)
         {
-            if (typeOfBalloon == typeof(Balloon))
+            if (typeOfBalloon == Constants.OrdBalloon)
                 balloonPool.GetFree();
-            else if (typeOfBalloon == typeof(BangBalloon)) 
+            else if (typeOfBalloon == Constants.BangBalloon)
                 bangBalloonPool.GetFree();
         }
 
-        public void ReturnBalloonToPool(Balloon balloon) => balloonPool.ReturnToPool(balloon);
-
-        public void ReturnBangBalloonToPool(BangBalloon bangBalloon) => bangBalloonPool.ReturnToPool(bangBalloon);
+        public void ReturnBalloonInPool(Balloon balloon) => balloonPool.ReturnToPool(balloon);
     }
 }

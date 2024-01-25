@@ -1,4 +1,8 @@
+using System;
 using System.Collections;
+using Internal.Codebase.BalloonLogic.Balloons;
+using Internal.Codebase.BalloonLogic.BalloonsConfigs;
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 using Zenject;
 
@@ -7,17 +11,19 @@ namespace Internal.Codebase.BalloonLogic
     public class BalloonSpawner : MonoBehaviour
     {
         private const int BangBalloonsSpawnRate = 3;
-
+        private const int BalloonsSpawnRate = 1;
+        
         public IBalloonFactory BalloonFactory;
 
-        private const int BalloonsSpawnRate = 1;
+        [SerializeField] private BalloonsConfig balloonsConfig;
 
-        [Inject]
-        public void Constructor(IBalloonFactory balloonFactory) =>
-            BalloonFactory = balloonFactory;
+        public static Action<Balloon> HideBalloon;
 
         private void Start()
         {
+            BalloonFactory = new BalloonFactory(balloonsConfig);
+            BalloonFactory.InitPools();
+            
             StartCoroutine(SpawnBalloons());
             StartCoroutine(SpawnBangBalloons());
         }
@@ -26,7 +32,7 @@ namespace Internal.Codebase.BalloonLogic
         {
             while (true)
             {
-                BalloonFactory.GetFreeBalloon(typeof(Balloon));
+                BalloonFactory.GetFreeBalloon(Constants.OrdBalloon);
                 yield return new WaitForSeconds(BalloonsSpawnRate);
             }
         }
@@ -35,7 +41,7 @@ namespace Internal.Codebase.BalloonLogic
         {
             while (true)
             {
-                BalloonFactory.GetFreeBalloon(typeof(BangBalloon));
+                BalloonFactory.GetFreeBalloon(Constants.BangBalloon);
                 yield return new WaitForSeconds(BangBalloonsSpawnRate);
             }
         }

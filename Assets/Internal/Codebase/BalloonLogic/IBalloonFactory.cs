@@ -1,4 +1,5 @@
 using System;
+using Internal.Codebase.BalloonLogic.Balloons;
 
 namespace Internal.Codebase.BalloonLogic
 {
@@ -8,10 +9,8 @@ namespace Internal.Codebase.BalloonLogic
 
         public void DisableAllPools();
 
-        public void GetFreeBalloon(Type typeOfBalloon);
+        public void GetFreeBalloon(string typeOfBalloon);
 
-        public void ReturnBalloonToPool(Balloon balloon);
-
-        public void ReturnBangBalloonToPool(BangBalloon bangBalloon);
+        public void ReturnBalloonInPool(Balloon balloon);
     }
 }

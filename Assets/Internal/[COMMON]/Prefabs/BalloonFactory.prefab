@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3756669924247271422}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76,6 +76,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920c6aef76998e445876d05afd534ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balloon: {fileID: 5741854520608734112, guid: 3cdbdbc0344abcd4fa9222f8e2614083, type: 3}
-  bangBalloon: {fileID: 3358673961488432509, guid: 1830c06c25e62554a9f9307f3efe121c, type: 3}
-  balloonContainer: {fileID: 24733114772256365}
+  balloonsConfig: {fileID: 0}
