@@ -1,5 +1,6 @@
 using Internal.Codebase.CounterLogic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Internal.Codebase.BalloonLogic.Balloons
@@ -12,15 +13,7 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         protected Transform BalloonTransform;
         protected Counter Counter;
 
-        private void Start()
-        {
-            BalloonFactory = FindObjectOfType<BalloonSpawner>();
-            Counter = FindObjectOfType<Counter>();
-            
-            BalloonTransform = GetComponent<Transform>();
-        }
-
-        public void BalloonBit()
+        public virtual void BalloonBit()
         {
             BalloonFactory.BalloonFactory.ReturnBalloonInPool(this);
             Counter.CountIncrease();

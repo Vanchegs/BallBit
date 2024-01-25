@@ -170,6 +170,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &103712864 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 24733114772256365, guid: 086b2588b1edee9468e3a30f75c963bb, type: 3}
+  m_PrefabInstance: {fileID: 7520119754871964341}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &199669924
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +809,10 @@ PrefabInstance:
       propertyPath: balloonsConfig
       value: 
       objectReference: {fileID: 11400000, guid: db5caa0e844750549b55d9192e228e9c, type: 2}
+    - target: {fileID: 6107583890436715771, guid: 086b2588b1edee9468e3a30f75c963bb, type: 3}
+      propertyPath: balloonContainer
+      value: 
+      objectReference: {fileID: 103712864}
     - target: {fileID: 7496088682082938581, guid: 086b2588b1edee9468e3a30f75c963bb, type: 3}
       propertyPath: m_Name
       value: BalloonFactory

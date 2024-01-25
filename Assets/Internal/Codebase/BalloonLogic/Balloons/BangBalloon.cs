@@ -5,13 +5,14 @@ namespace Internal.Codebase.BalloonLogic.Balloons
 {
     public class BangBalloon : Balloon
     {
-        private BalloonSpawner balloonFactory;
-        private Transform balloonTransform;
-        private Counter counter;
-
         private void Start()
         {
             ConstantSpeed = 0.08f;
+            
+            BalloonFactory = FindObjectOfType<BalloonSpawner>();
+            Counter = FindObjectOfType<Counter>();
+            
+            BalloonTransform = GetComponent<Transform>();
             
             RandomizationStartPosition();
         }
@@ -20,6 +21,13 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         {
             ConstantMoveUp();
             CheckDeleteHeight();
+        }
+
+        public override void BalloonBit()
+        {
+            BalloonFactory.BalloonFactory.ReturnBalloonInPool(this);
+            Counter.CountDecrease();
+            RandomizationStartPosition();
         }
     }
 }

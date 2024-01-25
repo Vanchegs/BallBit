@@ -9,9 +9,5 @@ namespace Internal.Codebase.BalloonLogic.BalloonsConfigs
         public OrdinaryBalloon normalBalloonPrefab;
 
         public BangBalloon bangBalloonPrefab;
-
-        public Transform spawnPoint;
-
-        public int quantity;
     }
 }

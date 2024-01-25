@@ -19,7 +19,9 @@ namespace Internal.Codebase.CounterLogic
 
         public void CountDecrease()
         {
-            Count--;
+            if (Count > 0) 
+                Count--;
+
             countText.text = $"{Count}";
         }
     }

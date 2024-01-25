@@ -12,16 +12,18 @@ namespace Internal.Codebase.BalloonLogic
     {
         private const int BangBalloonsSpawnRate = 3;
         private const int BalloonsSpawnRate = 1;
+        private const int BalloonQuantity = 20;
         
         public IBalloonFactory BalloonFactory;
 
         [SerializeField] private BalloonsConfig balloonsConfig;
+        [SerializeField] private Transform balloonContainer;
 
         public static Action<Balloon> HideBalloon;
 
         private void Start()
         {
-            BalloonFactory = new BalloonFactory(balloonsConfig);
+            BalloonFactory = new BalloonFactory(balloonsConfig, balloonContainer, BalloonQuantity);
             BalloonFactory.InitPools();
             
             StartCoroutine(SpawnBalloons());
