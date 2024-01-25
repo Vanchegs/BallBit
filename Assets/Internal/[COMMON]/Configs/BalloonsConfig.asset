@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: BalloonsConfig
   m_EditorClassIdentifier: 
   normalBalloonPrefab: {fileID: 5741854520608734112, guid: 3cdbdbc0344abcd4fa9222f8e2614083, type: 3}
-  bangBalloonPrefab: {fileID: 3358673961488432509, guid: 1830c06c25e62554a9f9307f3efe121c, type: 3}
-  spawnPoint: {fileID: 3646657917126519746, guid: 086b2588b1edee9468e3a30f75c963bb, type: 3}
-  quantity: 20
+  surpriseBalloonPrefab: {fileID: 3358673961488432509, guid: 1830c06c25e62554a9f9307f3efe121c, type: 3}

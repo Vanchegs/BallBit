@@ -9,7 +9,7 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
 {
     public class BalloonSpawner : MonoBehaviour
     {
-        private const int BangBalloonsSpawnRate = 3;
+        private const int SurpriseBalloonsSpawnRate = 3;
         private const int BalloonsSpawnRate = 1;
         private const int BalloonQuantity = 20;
 
@@ -27,7 +27,7 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
             balloonFactory.InitPools();
             
             StartCoroutine(SpawnOrdinaryBalloons());
-            StartCoroutine(SpawnBangBalloons());
+            StartCoroutine(SpawnSurpriseBalloons());
         }
         
         private void OnEnable() => 
@@ -48,12 +48,12 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
             }
         }
 
-        public IEnumerator SpawnBangBalloons()
+        public IEnumerator SpawnSurpriseBalloons()
         {
             while (true)
             {
-                balloonFactory.GetFreeBalloon(Constants.BangBalloon);
-                yield return new WaitForSeconds(BangBalloonsSpawnRate);
+                balloonFactory.GetFreeBalloon(Constants.SurpBalloon);
+                yield return new WaitForSeconds(SurpriseBalloonsSpawnRate);
             }
         }
     }

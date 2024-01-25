@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic.Balloons
 {
-    public class BangBalloon : Balloon
+    public class SurpriseBalloon : Balloon
     {
         private void Start()
         {
@@ -26,7 +26,7 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         public override void BalloonBit()
         {
             BalloonSpawner.HideBalloon(this);
-            Counter.CountDecrease();
+            Counter.CountRandomChange();
             RandomizationStartPosition();
         }
     }

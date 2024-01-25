@@ -17,10 +17,14 @@ namespace Internal.Codebase.CounterLogic
             countText.text = $"{Count}";
         }
 
-        public void CountDecrease()
+        public void CountRandomChange()
         {
-            if(Count > 0)
+            var randomValueChange = Random.Range(-10, 10);
+            
+            if(Count - randomValueChange >= 0)
                 Count--;
+            else
+                Count = 0;
 
             countText.text = $"{Count}";
         }
