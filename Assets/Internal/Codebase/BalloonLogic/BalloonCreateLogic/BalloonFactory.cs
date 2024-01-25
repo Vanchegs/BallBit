@@ -3,7 +3,7 @@ using Internal.Codebase.BalloonLogic.BalloonsConfigs;
 using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
-namespace Internal.Codebase.BalloonLogic
+namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
 {
     public class BalloonFactory : IBalloonFactory
     {
@@ -43,6 +43,7 @@ namespace Internal.Codebase.BalloonLogic
                 bangBalloonPool.GetFree();
         }
 
-        public void ReturnBalloonInPool(Balloon balloon) => balloonPool.ReturnToPool(balloon);
+        public void ReturnBalloonInPool(Balloon balloon) =>
+            balloonPool.ReturnToPool(balloon);
     }
 }

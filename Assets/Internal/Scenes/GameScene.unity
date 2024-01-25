@@ -500,10 +500,10 @@ RectTransform:
   - {fileID: 1999790246}
   m_Father: {fileID: 2024714658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: 300, y: 150}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -88.521, y: -59.014}
+  m_SizeDelta: {x: 177.04, y: 118.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1951385540
 MonoBehaviour:
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f95e902d909f7a143ac627194ac04d2b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -616,12 +616,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -636,9 +636,9 @@ Canvas:
   m_GameObject: {fileID: 2024714657}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -688,11 +688,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 883041428944718802, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 106.99
       objectReference: {fileID: 0}
     - target: {fileID: 883041428944718802, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 151.6405
+      value: 75.82
       objectReference: {fileID: 0}
     - target: {fileID: 883041428944718802, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -728,7 +728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 883041428944718802, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000018835
+      value: 0.000011444
       objectReference: {fileID: 0}
     - target: {fileID: 883041428944718802, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -748,6 +748,30 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 8188645255926453764, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
+      propertyPath: m_fontSize
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188645255926453764, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5566037
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188645255926453764, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.86251956
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188645255926453764, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188645255926453764, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188645255926453764, guid: 0a4316d99d3844a479d629457cb0a9c3, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4287552767
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -763,7 +787,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 24733114772256365, guid: 086b2588b1edee9468e3a30f75c963bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 3646657917126519746, guid: 086b2588b1edee9468e3a30f75c963bb, type: 3}
       propertyPath: m_LocalPosition.x

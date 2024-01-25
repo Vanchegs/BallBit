@@ -1,3 +1,4 @@
+using Internal.Codebase.BalloonLogic.BalloonCreateLogic;
 using Internal.Codebase.CounterLogic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -33,7 +34,7 @@ namespace Internal.Codebase.BalloonLogic.Balloons
 
         public void RandomizationStartPosition()
         {
-            var xAxis = Random.Range(-8, 8);
+            var xAxis = Random.Range(-7, 7);
             BalloonTransform.transform.Translate(new Vector3(xAxis, 0, 0));
         }
     }

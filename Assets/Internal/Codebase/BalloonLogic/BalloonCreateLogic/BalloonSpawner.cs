@@ -1,19 +1,19 @@
 using System;
-using UnityEngine;
 using System.Collections;
-using Internal.Codebase.Infrastructure;
 using Internal.Codebase.BalloonLogic.Balloons;
 using Internal.Codebase.BalloonLogic.BalloonsConfigs;
+using Internal.Codebase.Infrastructure;
+using UnityEngine;
 
-namespace Internal.Codebase.BalloonLogic
+namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
 {
     public class BalloonSpawner : MonoBehaviour
     {
         private const int BangBalloonsSpawnRate = 3;
         private const int BalloonsSpawnRate = 1;
         private const int BalloonQuantity = 20;
-        
-        public IBalloonFactory BalloonFactory;
+
+        private IBalloonFactory balloonFactory;
 
         [Header("Data For Balloons")]
         [SerializeField] private BalloonsConfig balloonsConfig;
@@ -23,10 +23,10 @@ namespace Internal.Codebase.BalloonLogic
 
         private void Start()
         {
-            BalloonFactory = new BalloonFactory(balloonsConfig, balloonContainer, BalloonQuantity);
-            BalloonFactory.InitPools();
+            balloonFactory = new BalloonFactory(balloonsConfig, balloonContainer, BalloonQuantity);
+            balloonFactory.InitPools();
             
-            StartCoroutine(SpawnBalloons());
+            StartCoroutine(SpawnOrdinaryBalloons());
             StartCoroutine(SpawnBangBalloons());
         }
         
@@ -37,13 +37,13 @@ namespace Internal.Codebase.BalloonLogic
             HideBalloon -= BalloonHide;
 
         private void BalloonHide(Balloon balloon) => 
-            BalloonFactory.ReturnBalloonInPool(balloon);
+            balloonFactory.ReturnBalloonInPool(balloon);
 
-        public IEnumerator SpawnBalloons()
+        public IEnumerator SpawnOrdinaryBalloons()
         {
             while (true)
             {
-                BalloonFactory.GetFreeBalloon(Constants.OrdBalloon);
+                balloonFactory.GetFreeBalloon(Constants.OrdBalloon);
                 yield return new WaitForSeconds(BalloonsSpawnRate);
             }
         }
@@ -52,7 +52,7 @@ namespace Internal.Codebase.BalloonLogic
         {
             while (true)
             {
-                BalloonFactory.GetFreeBalloon(Constants.BangBalloon);
+                balloonFactory.GetFreeBalloon(Constants.BangBalloon);
                 yield return new WaitForSeconds(BangBalloonsSpawnRate);
             }
         }

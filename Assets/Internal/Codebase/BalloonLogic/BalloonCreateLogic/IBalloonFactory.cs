@@ -1,6 +1,6 @@
 using Internal.Codebase.BalloonLogic.Balloons;
 
-namespace Internal.Codebase.BalloonLogic
+namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
 {
     public interface IBalloonFactory
     {

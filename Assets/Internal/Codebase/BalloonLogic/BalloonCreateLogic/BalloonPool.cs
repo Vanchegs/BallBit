@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Internal.Codebase.BalloonLogic
+namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
 {
     public class BalloonPool<T> where T : MonoBehaviour
     {
