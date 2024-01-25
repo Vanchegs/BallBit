@@ -1,6 +1,5 @@
 using Internal.Codebase.CounterLogic;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Internal.Codebase.BalloonLogic.Balloons
@@ -9,13 +8,12 @@ namespace Internal.Codebase.BalloonLogic.Balloons
     {
         protected float ConstantSpeed { get; set; }
 
-        protected BalloonSpawner BalloonFactory;
         protected Transform BalloonTransform;
         protected Counter Counter;
 
         public virtual void BalloonBit()
         {
-            BalloonFactory.BalloonFactory.ReturnBalloonInPool(this);
+            BalloonSpawner.HideBalloon(this);
             Counter.CountIncrease();
             RandomizationStartPosition();
         }
@@ -29,7 +27,7 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         public void CheckDeleteHeight()
         {
             if (!(BalloonTransform.position.y > 10)) return;
-            BalloonFactory.BalloonFactory.ReturnBalloonInPool(this);
+            BalloonSpawner.HideBalloon?.Invoke(this);
             RandomizationStartPosition();
         }
 

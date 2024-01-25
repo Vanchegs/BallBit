@@ -9,7 +9,6 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         {
             ConstantSpeed = 0.05f;
             
-            BalloonFactory = FindObjectOfType<BalloonSpawner>();
             Counter = FindObjectOfType<Counter>();
             
             BalloonTransform = GetComponent<Transform>();

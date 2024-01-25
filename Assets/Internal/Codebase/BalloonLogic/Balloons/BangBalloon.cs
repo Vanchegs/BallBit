@@ -9,7 +9,6 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         {
             ConstantSpeed = 0.08f;
             
-            BalloonFactory = FindObjectOfType<BalloonSpawner>();
             Counter = FindObjectOfType<Counter>();
             
             BalloonTransform = GetComponent<Transform>();
@@ -25,7 +24,7 @@ namespace Internal.Codebase.BalloonLogic.Balloons
 
         public override void BalloonBit()
         {
-            BalloonFactory.BalloonFactory.ReturnBalloonInPool(this);
+            BalloonSpawner.HideBalloon(this);
             Counter.CountDecrease();
             RandomizationStartPosition();
         }

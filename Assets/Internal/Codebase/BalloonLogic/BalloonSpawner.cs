@@ -1,10 +1,9 @@
 using System;
+using UnityEngine;
 using System.Collections;
+using Internal.Codebase.Infrastructure;
 using Internal.Codebase.BalloonLogic.Balloons;
 using Internal.Codebase.BalloonLogic.BalloonsConfigs;
-using Internal.Codebase.Infrastructure;
-using UnityEngine;
-using Zenject;
 
 namespace Internal.Codebase.BalloonLogic
 {
@@ -16,6 +15,7 @@ namespace Internal.Codebase.BalloonLogic
         
         public IBalloonFactory BalloonFactory;
 
+        [Header("Data For Balloons")]
         [SerializeField] private BalloonsConfig balloonsConfig;
         [SerializeField] private Transform balloonContainer;
 
@@ -29,6 +29,15 @@ namespace Internal.Codebase.BalloonLogic
             StartCoroutine(SpawnBalloons());
             StartCoroutine(SpawnBangBalloons());
         }
+        
+        private void OnEnable() => 
+            HideBalloon += BalloonHide;
+
+        private void OnDisable() => 
+            HideBalloon -= BalloonHide;
+
+        private void BalloonHide(Balloon balloon) => 
+            BalloonFactory.ReturnBalloonInPool(balloon);
 
         public IEnumerator SpawnBalloons()
         {
