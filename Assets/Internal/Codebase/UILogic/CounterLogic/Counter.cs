@@ -14,6 +14,9 @@ namespace Internal.Codebase.UILogic.CounterLogic
         public void CountIncrease()
         {
             Count++;
+            
+            StoreWallet.StoreWallet.WalletChange?.Invoke(Count);
+            
             countText.text = $"{Count}";
         }
 
@@ -29,6 +32,8 @@ namespace Internal.Codebase.UILogic.CounterLogic
                 Count = 0;
             
             Debug.Log(Count);
+            
+            StoreWallet.StoreWallet.WalletChange?.Invoke(Count);
             
             countText.text = $"{Count}";
         }
