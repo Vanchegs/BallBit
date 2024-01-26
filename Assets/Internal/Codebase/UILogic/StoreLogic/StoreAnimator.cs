@@ -16,7 +16,7 @@ namespace Internal.Codebase.UILogic.StoreLogic
             }
             else
             {
-                transform.DOMoveX(17.8f, 1, false);
+                transform.DOMoveX(17.78f, 1, false);
                 isStoreActivate = false;
             }
         }
