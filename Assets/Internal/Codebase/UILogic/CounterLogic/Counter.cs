@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Internal.Codebase.CounterLogic
+namespace Internal.Codebase.UILogic.CounterLogic
 {
     public class Counter : MonoBehaviour
     {
@@ -21,10 +21,14 @@ namespace Internal.Codebase.CounterLogic
         {
             var randomValueChange = Random.Range(-10, 10);
             
-            Count =+ randomValueChange;
+            Debug.Log(randomValueChange);
+            
+            Count += randomValueChange;
 
             if (Count < 0)
                 Count = 0;
+            
+            Debug.Log(Count);
             
             countText.text = $"{Count}";
         }

@@ -1,5 +1,5 @@
 using Internal.Codebase.BalloonLogic.BalloonCreateLogic;
-using Internal.Codebase.CounterLogic;
+using Internal.Codebase.UILogic.CounterLogic;
 using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic.Balloons

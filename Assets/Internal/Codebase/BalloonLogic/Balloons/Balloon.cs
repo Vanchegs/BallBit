@@ -1,6 +1,6 @@
 using System;
 using Internal.Codebase.BalloonLogic.BalloonCreateLogic;
-using Internal.Codebase.CounterLogic;
+using Internal.Codebase.UILogic.CounterLogic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
