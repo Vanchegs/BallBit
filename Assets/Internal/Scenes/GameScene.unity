@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+  m_Color: {r: 0.81886786, g: 0.81886786, b: 0.81886786, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2442,11 +2442,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178855509699318598, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1178855509699318598, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1178855509699318598, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
       propertyPath: m_LocalScale.x
@@ -2478,7 +2478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1178855509699318598, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -10
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1178855509699318598, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2744,8 +2744,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7994545312447975351, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_text
-      value: "\u0412\u0430\u0443 \u0435\u0433\u043E \u0438 \u043F\u0440\u0430\u0432\u0434\u0430
-        \u043A\u0442\u043E-\u0442\u043E \u043A\u0443\u043F\u0438\u043B ?"
+      value: "\u0435\u0433\u043E \u0438 \u043F\u0440\u0430\u0432\u0434\u0430 \u043A\u0442\u043E-\u0442\u043E
+        \u043A\u0443\u043F\u0438\u043B ?"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
