@@ -1,5 +1,5 @@
-using System;
 using Internal.Codebase.BalloonLogic.BalloonCreateLogic;
+using Internal.Codebase.Infrastructure;
 using Internal.Codebase.UILogic.CounterLogic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -21,23 +21,35 @@ namespace Internal.Codebase.BalloonLogic.Balloons
             RandomizationStartPosition();
         }
 
-        public void ConstantMoveUp()
+        private void BalloonDestroy()
+        {
+            BalloonSpawner.HideBalloon(this);
+            RandomizationStartPosition();
+        }
+
+        protected void ConstantMoveUp()
         {
             var input = new Vector3(0, ConstantSpeed, 0);
             BalloonTransform.Translate(input);
         }
 
-        public void CheckDeleteHeight()
+        protected void CheckDeleteHeight()
         {
             if (!(BalloonTransform.position.y > 10)) return;
             BalloonSpawner.HideBalloon?.Invoke(this);
             RandomizationStartPosition();
         }
 
-        public void RandomizationStartPosition()
+        protected void RandomizationStartPosition()
         {
             var xAxis = Random.Range(-7, 7);
             BalloonTransform.transform.Translate(new Vector3(xAxis, 0, 0));
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.CompareTag(Constants.BalloonTag)) 
+                BalloonDestroy();
         }
     }
 }

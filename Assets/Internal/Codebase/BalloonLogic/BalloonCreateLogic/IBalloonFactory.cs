@@ -1,3 +1,4 @@
+using System;
 using Internal.Codebase.BalloonLogic.Balloons;
 
 namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
@@ -8,7 +9,7 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
 
         public void DisableAllPools();
 
-        public void GetFreeBalloon(string typeOfBalloon);
+        public void GetFreeBalloon(Type typeOfBalloon);
 
         public void ReturnBalloonInPool(Balloon balloon);
     }

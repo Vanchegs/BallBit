@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2541016630057940099}
   m_Layer: 0
   m_Name: Balloon
-  m_TagString: Untagged
+  m_TagString: Balloon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d35d0bbf684f17af9f1a2ee2035e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balloonTransform: {fileID: 1677888982211179046}
 --- !u!114 &5347891349244722902
 MonoBehaviour:
   m_ObjectHideFlags: 0

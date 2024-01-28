@@ -1,3 +1,4 @@
+using System;
 using Internal.Codebase.BalloonLogic.Balloons;
 using Internal.Codebase.BalloonLogic.BalloonsConfigs;
 using Internal.Codebase.Infrastructure;
@@ -35,11 +36,11 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
             surpriseBalloonPool.DisableAll();
         }
 
-        public void GetFreeBalloon(string typeOfBalloon)
+        public void GetFreeBalloon(Type typeOfBalloon)
         {
-            if (typeOfBalloon == Constants.OrdBalloon)
+            if (typeOfBalloon == typeof(OrdinaryBalloon))
                 balloonPool.GetFree();
-            else if (typeOfBalloon == Constants.SurpBalloon)
+            else if (typeOfBalloon == typeof(SurpriseBalloon))
                 surpriseBalloonPool.GetFree();
         }
 

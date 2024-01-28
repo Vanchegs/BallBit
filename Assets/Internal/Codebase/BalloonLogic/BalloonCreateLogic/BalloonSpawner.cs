@@ -11,7 +11,7 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
     {
         private const int SurpriseBalloonsSpawnRate = 3;
         private const int BalloonsSpawnRate = 1;
-        private const int BalloonQuantity = 20;
+        private const int BalloonQuantity = 10;
 
         private IBalloonFactory balloonFactory;
 
@@ -43,7 +43,7 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
         {
             while (true)
             {
-                balloonFactory.GetFreeBalloon(Constants.OrdBalloon);
+                balloonFactory.GetFreeBalloon(typeof(OrdinaryBalloon));
                 yield return new WaitForSeconds(BalloonsSpawnRate);
             }
         }
@@ -52,7 +52,7 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
         {
             while (true)
             {
-                balloonFactory.GetFreeBalloon(Constants.SurpBalloon);
+                balloonFactory.GetFreeBalloon(typeof(SurpriseBalloon));
                 yield return new WaitForSeconds(SurpriseBalloonsSpawnRate);
             }
         }
