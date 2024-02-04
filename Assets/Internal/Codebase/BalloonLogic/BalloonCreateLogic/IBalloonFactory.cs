@@ -4,13 +4,13 @@ using Internal.Codebase.BalloonLogic.Balloons;
 namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
 {
     public interface IBalloonFactory
-    {
-        public void InitPools();
+    { 
+        void InitPools();
 
-        public void DisableAllPools();
+        void DisableAllPools();
 
-        public void GetFreeBalloon(Type typeOfBalloon);
+        void GetFreeBalloon(Type typeOfBalloon);
 
-        public void ReturnBalloonInPool(Balloon balloon);
+        void ReturnBalloonInPool(Balloon balloon);
     }
 }

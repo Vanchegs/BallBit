@@ -1211,8 +1211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7994545312447975351, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_text
-      value: "\u0417\u0430\u0447\u0435\u043C \u0442\u0435\u0431\u0435 \u0432\u043E\u043F\u0440\u043E\u0441\u044B
-        ?"
+      value: ???
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2936,11 +2935,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3446206041402019546, guid: 4d47237ca35cb57489297f91c05a3ed2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -100.3999
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 3446206041402019546, guid: 4d47237ca35cb57489297f91c05a3ed2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -65.19995
+      value: -65
       objectReference: {fileID: 0}
     - target: {fileID: 3446206041402019546, guid: 4d47237ca35cb57489297f91c05a3ed2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

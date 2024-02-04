@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using Internal.Codebase.BalloonLogic.Balloons;
 using Internal.Codebase.BalloonLogic.BalloonsConfigs;
-using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
@@ -26,10 +25,15 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
             balloonFactory = new BalloonFactory(balloonsConfig, balloonContainer, BalloonQuantity);
             balloonFactory.InitPools();
             
+            CoroutineStarting();
+        }
+
+        private void CoroutineStarting()
+        {
             StartCoroutine(SpawnOrdinaryBalloons());
             StartCoroutine(SpawnSurpriseBalloons());
         }
-        
+
         private void OnEnable() => 
             HideBalloon += BalloonHide;
 

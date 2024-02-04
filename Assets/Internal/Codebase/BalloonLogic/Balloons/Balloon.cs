@@ -13,7 +13,6 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         protected Transform BalloonTransform;
         protected Counter Counter;
 
-
         public virtual void BalloonBit()
         {
             BalloonSpawner.HideBalloon(this);
