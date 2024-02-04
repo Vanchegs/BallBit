@@ -1,5 +1,4 @@
 using Internal.Codebase.BalloonLogic.BalloonCreateLogic;
-using Internal.Codebase.UILogic.CounterLogic;
 using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic.Balloons
@@ -10,7 +9,7 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         {
             ConstantSpeed = 0.08f;
             
-            Counter = FindObjectOfType<Counter>();
+            //Counter = FindObjectOfType<Counter>();
             
             BalloonTransform = GetComponent<Transform>();
             

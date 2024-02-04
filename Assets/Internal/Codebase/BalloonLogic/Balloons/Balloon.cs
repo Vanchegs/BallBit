@@ -2,6 +2,7 @@ using Internal.Codebase.BalloonLogic.BalloonCreateLogic;
 using Internal.Codebase.Infrastructure;
 using Internal.Codebase.UILogic.CounterLogic;
 using UnityEngine;
+using Zenject;
 using Random = UnityEngine.Random;
 
 namespace Internal.Codebase.BalloonLogic.Balloons
@@ -11,6 +12,8 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         protected float ConstantSpeed { get; set; }
 
         protected Transform BalloonTransform;
+        
+        [Inject]
         protected Counter Counter;
 
         public virtual void BalloonBit()

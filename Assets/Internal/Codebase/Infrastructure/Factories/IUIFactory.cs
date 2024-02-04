@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Internal.Codebase.UILogic.CounterLogic
+namespace Internal.Codebase.Infrastructure.Factories
 {
     public interface IUIFactory
     {
