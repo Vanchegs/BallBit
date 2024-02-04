@@ -8,7 +8,7 @@ namespace Internal.Codebase.Infrastructure
     {
         [SerializeField] private Counter counterPrefab;
 
-        public override void InstallBindings() => 
+        public override void InstallBindings() =>
             Container.Bind<Counter>().FromInstance(counterPrefab).AsSingle();
     }
 }

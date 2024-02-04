@@ -589,8 +589,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8012d7b8fd4e0c93842a0779cd5372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiPrefab: {fileID: 6140205246721206200, guid: 279c89d5b74f19141a988098faf99e50, type: 3}
-  spawnPosition: {fileID: 507265461}
+  uiListToSpawn:
+  - {fileID: 6140205246721206200, guid: 279c89d5b74f19141a988098faf99e50, type: 3}
+  - {fileID: 6749514998374972483, guid: a6c2e25282bbcac4587ef0ef42d5d539, type: 3}
+  spawnPosition:
+  - {fileID: 507265461}
+  - {fileID: 6019293639261796768, guid: 279c89d5b74f19141a988098faf99e50, type: 3}
 --- !u!1001 &7520119754871964341
 PrefabInstance:
   m_ObjectHideFlags: 0
