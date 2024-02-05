@@ -1,3 +1,4 @@
+using Internal.Codebase.BalloonLogic.BalloonCreateLogic;
 using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic.Balloons
@@ -19,6 +20,13 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         {
             ConstantMoveUp();
             CheckDeleteHeight();
+        }
+
+        public override void BalloonBit()
+        {
+            BalloonSpawner.HideBalloon(this);
+            OrdinaryBalloonBit?.Invoke();
+            RandomizationStartPosition();
         }
     }
 }

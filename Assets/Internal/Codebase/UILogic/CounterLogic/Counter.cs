@@ -1,7 +1,7 @@
-using System;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using Internal.Codebase.BalloonLogic.Balloons;
 
 namespace Internal.Codebase.UILogic.CounterLogic
 {
@@ -11,7 +11,20 @@ namespace Internal.Codebase.UILogic.CounterLogic
         
         private TMP_Text countText;
 
-        private void Start() => countText = GetComponent<TMP_Text>();
+        private void Start() => 
+            countText = GetComponent<TMP_Text>();
+
+        private void OnEnable()
+        {
+            Balloon.SurpriseBalloonBit += CountRandomChange;
+            Balloon.OrdinaryBalloonBit += CountIncrease;
+        }
+
+        private void OnDisable()
+        {
+            Balloon.SurpriseBalloonBit -= CountRandomChange;
+            Balloon.OrdinaryBalloonBit -= CountIncrease;
+        }
 
         public void CountIncrease()
         {
