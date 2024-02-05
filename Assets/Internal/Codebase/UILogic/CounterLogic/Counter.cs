@@ -46,8 +46,6 @@ namespace Internal.Codebase.UILogic.CounterLogic
             if (Count < 0)
                 Count = 0;
             
-            Debug.Log(Count);
-            
             StoreWallet.StoreWallet.WalletChange?.Invoke(Count);
             
             countText.text = $"{Count}";

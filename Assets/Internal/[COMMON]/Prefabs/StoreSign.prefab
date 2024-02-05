@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5121795279741720441}
   - component: {fileID: 8915931826735995649}
   - component: {fileID: 2012792861674684586}
+  - component: {fileID: 6327808503639430769}
   m_Layer: 5
   m_Name: StoreSign
   m_TagString: Untagged
@@ -79,6 +80,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6327808503639430769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290819441605308479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe1cefeaa4658d4fb1c2ed352a2b367, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameStoreSign: {fileID: 4836146101337831019}
+  descriptionStoreSign: {fileID: 7994545312447975351}
+  imageStoreSign: {fileID: 2397800128650711368}
+  buttonStoreSign: {fileID: 3028985565529207877}
 --- !u!1 &2528671628252252354
 GameObject:
   m_ObjectHideFlags: 0

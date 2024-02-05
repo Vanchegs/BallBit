@@ -9,8 +9,6 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         {
             ConstantSpeed = 0.05f;
             
-            //Counter = FindObjectOfType<Counter>();
-            
             BalloonTransform = GetComponent<Transform>();
             
             RandomizationStartPosition();

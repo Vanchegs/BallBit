@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace Internal.Codebase.UILogic
+namespace Internal.Codebase.UILogic.CanvasSettings
 {
     public class CameraFinder : MonoBehaviour
     {
@@ -10,10 +9,14 @@ namespace Internal.Codebase.UILogic
         
         private void Start()
         {
-            mainCamera = Camera.main;
             canvas = GetComponent<Canvas>();
+            
+            mainCamera = Camera.main;
 
-            canvas.worldCamera = mainCamera;
+            CameraFinding(mainCamera, canvas);
         }
+
+        private void CameraFinding(Camera camera, Canvas canvas) => 
+            canvas.worldCamera = camera;
     }
 }
