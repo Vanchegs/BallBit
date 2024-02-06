@@ -656,59 +656,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6019293639261796768}
     m_Modifications:
-    - target: {fileID: 1242692459241694089, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 1254574925053587031, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_Name
-      value: ShoulderStrapsStoreSign
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395973336360660036, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 1710492870515582510, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_Name
       value: AirBalloonStoreSign
       objectReference: {fileID: 0}
-    - target: {fileID: 1816279722943617936, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 1864647316366746028, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 175
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936371049712883638, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 550
-      objectReference: {fileID: 0}
-    - target: {fileID: 2152705327612951094, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_Name
-      value: RespectStoreSign
-      objectReference: {fileID: 0}
     - target: {fileID: 2330123758827872572, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_Name
       value: Wallet
-      objectReference: {fileID: 0}
-    - target: {fileID: 2360517388174817386, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_text
-      value: "\u0412\u0441\u0435 \u043D\u0430 \u0441\u0432\u0435\u0442\u0435 \u0434\u043E\u043B\u0436\u043D\u044B
-        \u0431\u044B\u0442\u044C \u043B\u044E\u0431\u0438\u043C\u044B"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2360517388174817386, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_margin.z
-      value: -11.3828125
-      objectReference: {fileID: 0}
-    - target: {fileID: 2890289381947374159, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_text
-      value: "\u041A\u043E\u0442 \u0438\u0437 \u043D\u0435\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0449\u0435\u0439
-        \u0438\u0433\u0440\u044B"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3314052795781632724, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3745617665354650328, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_Pivot.x
@@ -794,14 +748,6 @@ PrefabInstance:
       propertyPath: imageStoreSign
       value: 
       objectReference: {fileID: 3379437261157564746}
-    - target: {fileID: 3959398245654217365, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 4507963353544462956, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_Name
-      value: QuastionStoreSign
-      objectReference: {fileID: 0}
     - target: {fileID: 4934646865016240119, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_fontColor.b
       value: 0.10196079
@@ -822,73 +768,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Store
       objectReference: {fileID: 0}
-    - target: {fileID: 5874357525615853664, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6153732821994375690, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_Name
-      value: StoneStoreSign
-      objectReference: {fileID: 0}
-    - target: {fileID: 6271230640813426119, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_Name
-      value: CatStoreSign
-      objectReference: {fileID: 0}
-    - target: {fileID: 6291572663995123737, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6622260852486003832, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 777
-      objectReference: {fileID: 0}
-    - target: {fileID: 6694128100771246584, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_Name
-      value: HeroStoreSign
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849330682085129694, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_Name
-      value: PriceListStoreSign
-      objectReference: {fileID: 0}
-    - target: {fileID: 6906696524856444898, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_Name
-      value: HeartStoreSign
-      objectReference: {fileID: 0}
-    - target: {fileID: 7189179708105805689, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 371.9391
-      objectReference: {fileID: 0}
-    - target: {fileID: 7189179708105805689, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 7189179708105805689, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -14.394
-      objectReference: {fileID: 0}
-    - target: {fileID: 7717894556352728412, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 7717894556352728412, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -18.549997
-      objectReference: {fileID: 0}
     - target: {fileID: 7765591460994806938, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_Name
       value: ElitAirBalloonStoreSign
       objectReference: {fileID: 0}
-    - target: {fileID: 8127755453591774427, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: m_Name
-      value: LifeStoreSign
-      objectReference: {fileID: 0}
     - target: {fileID: 8221845680722849208, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_Name
       value: AirStoreSign
-      objectReference: {fileID: 0}
-    - target: {fileID: 8698295820437271586, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      propertyPath: <ProductPrice>k__BackingField
-      value: 999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

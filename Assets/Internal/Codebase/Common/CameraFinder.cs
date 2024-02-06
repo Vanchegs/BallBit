@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Internal.Codebase.UILogic.CanvasSettings
+namespace Internal.Codebase.Common
 {
     public class CameraFinder : MonoBehaviour
     {
