@@ -159,8 +159,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 925630854268544475}
-        m_TargetAssemblyTypeName: Internal.Codebase.UILogic.StoreLogic.StoreAnimator,
+      - m_Target: {fileID: 6674077979363641704}
+        m_TargetAssemblyTypeName: Internal.Codebase.UILogic.StoreLogic.StoreMover,
           Assembly-CSharp
         m_MethodName: MoveStore
         m_Mode: 1
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 3745617665354650328}
   - component: {fileID: 2788010062848899800}
   - component: {fileID: 7954357619215198499}
-  - component: {fileID: 925630854268544475}
+  - component: {fileID: 6674077979363641704}
   m_Layer: 5
   m_Name: Store
   m_TagString: Untagged
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &925630854268544475
+--- !u!114 &6674077979363641704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,9 +260,84 @@ MonoBehaviour:
   m_GameObject: {fileID: 4985035008975409105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232eb7a3accd15f4499b37fb4cc7a4ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6b916f70b54514196257cb19d9cf71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &5225342651963612204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2717910048856126934}
+  - component: {fileID: 8669039052282786383}
+  - component: {fileID: 9026985826167580595}
+  m_Layer: 5
+  m_Name: IconImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2717910048856126934
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5225342651963612204}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2753452403823903645}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 80.3, y: 0}
+  m_SizeDelta: {x: 70.8, y: 70.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8669039052282786383
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5225342651963612204}
+  m_CullTransparentMesh: 1
+--- !u!114 &9026985826167580595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5225342651963612204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5324057318216594660
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,9 +498,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6473250095755829357}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign
+      value: ShoulderStrapsStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2247446306883394813, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_SizeDelta.x
@@ -601,9 +680,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8640708632331864030}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign (1)
+      value: AirBalloonStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2247446306883394813, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_SizeDelta.x
@@ -768,9 +851,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4900409946768985975}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 900
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign (1)
+      value: RespectStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2247446306883394813, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1107,12 +1194,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8258579160990242149, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
     m_RemovedGameObjects:
     - {fileID: 3315709745408184643, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4602094214330953428, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5536754499324826653}
   m_SourcePrefab: {fileID: 100100000, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
+--- !u!1 &2330123758827872572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4602094214330953428, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
+  m_PrefabInstance: {fileID: 2273103369481588712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5536754499324826653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330123758827872572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5754d76670e0a6646a3615afeec2ea1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8056481752017995905 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8090136254798268265, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
@@ -1126,9 +1234,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4900409946768985975}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 999
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign (2)
+      value: QuastionStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2397800128650711368, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Sprite
@@ -1264,9 +1376,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6473250095755829357}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign (1)
+      value: StoreStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2397800128650711368, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Sprite
@@ -1414,9 +1530,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4500172148421375873}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 555
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign
+      value: CatStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2397800128650711368, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Sprite
@@ -1569,9 +1689,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4900409946768985975}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 800
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign
+      value: HeroStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2247446306883394813, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1732,9 +1856,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6473250095755829357}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign (2)
+      value: LoveStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2397800128650711368, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Sprite
@@ -1879,9 +2007,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4500172148421375873}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign (1)
+      value: PriceListStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2397800128650711368, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Sprite
@@ -2033,9 +2165,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4500172148421375873}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: imageOfProduct
+      value: 
+      objectReference: {fileID: 9026985826167580595}
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 776
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign (2)
+      value: LifeStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2247446306883394813, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2152,7 +2292,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2528671628252252354, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5121795279741720441, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 2717910048856126934}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
 --- !u!224 &2753452403823903645 stripped
@@ -2168,9 +2311,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8640708632331864030}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <IsBuy>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign
+      value: AirStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2397800128650711368, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Sprite
@@ -2319,9 +2470,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8640708632331864030}
     m_Modifications:
+    - target: {fileID: 1110320334751523139, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <ProductPrice>k__BackingField
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 1290819441605308479, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_Name
-      value: StoreSign (2)
+      value: ElitAirBalloonStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2247446306883394813, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: m_SizeDelta.x

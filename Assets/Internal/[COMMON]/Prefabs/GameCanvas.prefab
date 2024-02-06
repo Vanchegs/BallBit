@@ -312,8 +312,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5229929870536352846}
-        m_TargetAssemblyTypeName: Internal.Codebase.UILogic.StoreLogic.StoreAnimator,
+      - m_Target: {fileID: 2337931925126319052}
+        m_TargetAssemblyTypeName: Internal.Codebase.UILogic.StoreLogic.StoreMover,
           Assembly-CSharp
         m_MethodName: MoveStore
         m_Mode: 1
@@ -656,9 +656,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6019293639261796768}
     m_Modifications:
+    - target: {fileID: 1254574925053587031, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_Name
+      value: ShoulderStrapsStoreSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576296388209950083, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2337931925126319052}
+    - target: {fileID: 1576296388209950083, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveStore
+      objectReference: {fileID: 0}
     - target: {fileID: 1710492870515582510, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_Name
       value: AirBalloonStoreSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 2152705327612951094, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_Name
+      value: RaspectStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 2330123758827872572, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_Name
@@ -748,6 +764,10 @@ PrefabInstance:
       propertyPath: imageStoreSign
       value: 
       objectReference: {fileID: 3379437261157564746}
+    - target: {fileID: 4507963353544462956, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_Name
+      value: QuastionStoreSign
+      objectReference: {fileID: 0}
     - target: {fileID: 4934646865016240119, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_fontColor.b
       value: 0.10196079
@@ -768,31 +788,69 @@ PrefabInstance:
       propertyPath: m_Name
       value: Store
       objectReference: {fileID: 0}
+    - target: {fileID: 6153732821994375690, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_Name
+      value: StoneStoreSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271230640813426119, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_Name
+      value: CatStoreSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6694128100771246584, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_Name
+      value: HeroStoreSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849330682085129694, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_Name
+      value: PriceListStoreSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906696524856444898, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_Name
+      value: LoveStoreSign
+      objectReference: {fileID: 0}
     - target: {fileID: 7765591460994806938, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_Name
       value: ElitAirBalloonStoreSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127755453591774427, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      propertyPath: m_Name
+      value: LifeStoreSign
       objectReference: {fileID: 0}
     - target: {fileID: 8221845680722849208, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_Name
       value: AirStoreSign
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 925630854268544475, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+    - {fileID: 7861018328246377101, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2753452403823903645, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       insertIndex: 0
       addedObject: {fileID: 7263536982577917982}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4985035008975409105, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2337931925126319052}
+    - targetCorrespondingSourceObject: {fileID: 2330123758827872572, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7250212280054866140}
   m_SourcePrefab: {fileID: 100100000, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
---- !u!114 &5229929870536352846 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 925630854268544475, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+--- !u!1 &99808392801603140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4985035008975409105, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
   m_PrefabInstance: {fileID: 4921574409540944277}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &2337931925126319052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99808392801603140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232eb7a3accd15f4499b37fb4cc7a4ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6b916f70b54514196257cb19d9cf71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &7096207943079150088 stripped
@@ -800,6 +858,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2753452403823903645, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
   m_PrefabInstance: {fileID: 4921574409540944277}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7213274493290373289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2330123758827872572, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+  m_PrefabInstance: {fileID: 4921574409540944277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7250212280054866140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7213274493290373289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d94f3cd8845f529458f0b4420af4737c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8626621663484777293 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3745617665354650328, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
