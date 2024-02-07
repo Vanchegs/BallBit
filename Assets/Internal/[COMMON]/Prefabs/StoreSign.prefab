@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5121795279741720441}
   - component: {fileID: 8915931826735995649}
   - component: {fileID: 2012792861674684586}
-  - component: {fileID: 1110320334751523139}
+  - component: {fileID: 8678821259163134606}
   m_Layer: 5
   m_Name: StoreSign
   m_TagString: Untagged
@@ -80,7 +80,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1110320334751523139
+--- !u!114 &8678821259163134606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1290819441605308479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29edc4915bd33bd45a7f563a00723cee, type: 3}
+  m_Script: {fileID: 11500000, guid: 9da71221cde72bc45aaecba476dab570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   <IsBuy>k__BackingField: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   descriptionStoreSign: {fileID: 7994545312447975351}
   buyButtonText: {fileID: 4370080427649683760}
   imageOfProduct: {fileID: 2397800128650711368}
-  buyButton: {fileID: 0}
+  buyButton: {fileID: 3028985565529207877}
 --- !u!1 &2528671628252252354
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Internal.Codebase.UILogic.StoreLogic
 {
-    public class StoreSign : MonoBehaviour
+    public class ShopSign : MonoBehaviour
     {
         [field: SerializeField] public bool IsBuy { get; private set; }
         [field: SerializeField] public int ProductPrice { get; private set; }
