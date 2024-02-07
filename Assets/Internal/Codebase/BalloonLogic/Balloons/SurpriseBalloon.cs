@@ -23,7 +23,7 @@ namespace Internal.Codebase.BalloonLogic.Balloons
 
         public override void BalloonBit()
         {
-            BalloonSpawner.HideBalloon(this);
+            GameEventBus.HideBalloon(this);
             RandomizationStartPosition();
             GameEventBus.SurpriseBalloonBit?.Invoke();
         }

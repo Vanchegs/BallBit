@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8915931826735995649}
   - component: {fileID: 2012792861674684586}
   - component: {fileID: 8678821259163134606}
+  - component: {fileID: 2680182016268624379}
   m_Layer: 5
   m_Name: StoreSign
   m_TagString: Untagged
@@ -92,13 +93,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9da71221cde72bc45aaecba476dab570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsBuy>k__BackingField: 0
-  <ProductPrice>k__BackingField: 0
   nameStoreSign: {fileID: 4836146101337831019}
   descriptionStoreSign: {fileID: 7994545312447975351}
   buyButtonText: {fileID: 4370080427649683760}
   imageOfProduct: {fileID: 2397800128650711368}
   buyButton: {fileID: 3028985565529207877}
+--- !u!114 &2680182016268624379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290819441605308479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a4254062afe134889dd6f413d85e59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <IsBuy>k__BackingField: 0
+  <ProductPrice>k__BackingField: 0
 --- !u!1 &2528671628252252354
 GameObject:
   m_ObjectHideFlags: 0

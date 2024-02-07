@@ -1,5 +1,6 @@
 using System;
 using Internal.Codebase.BalloonLogic.BalloonCreateLogic;
+using Internal.Codebase.Common;
 using Internal.Codebase.Infrastructure;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -14,14 +15,14 @@ namespace Internal.Codebase.BalloonLogic.Balloons
 
         public virtual void BalloonBit()
         {
-            BalloonSpawner.HideBalloon(this);
+            GameEventBus.HideBalloon(this);
             
             RandomizationStartPosition();
         }
 
         private void BalloonDestroy()
         {
-            BalloonSpawner.HideBalloon(this);
+            GameEventBus.HideBalloon(this);
             RandomizationStartPosition();
         }
 
@@ -34,7 +35,7 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         protected void CheckDeleteHeight()
         {
             if (!(BalloonTransform.position.y > 10)) return;
-            BalloonSpawner.HideBalloon?.Invoke(this);
+            GameEventBus.HideBalloon?.Invoke(this);
             RandomizationStartPosition();
         }
 

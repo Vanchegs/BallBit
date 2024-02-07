@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Internal.Codebase.BalloonLogic.Balloons;
 using Internal.Codebase.BalloonLogic.BalloonsConfigs;
+using Internal.Codebase.Common;
 using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
@@ -18,8 +19,6 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
         [SerializeField] private BalloonsConfig balloonsConfig;
         [SerializeField] private Transform balloonContainer;
 
-        public static Action<Balloon> HideBalloon;
-
         private void Start()
         {
             balloonFactory = new BalloonFactory(balloonsConfig, balloonContainer, BalloonQuantity);
@@ -27,23 +26,23 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
             
             CoroutineStarting();
         }
+        
+        private void OnEnable() => 
+            GameEventBus.HideBalloon += BalloonHide;
+         
+        private void OnDisable() => 
+            GameEventBus.HideBalloon -= BalloonHide;
 
         private void CoroutineStarting()
         {
             StartCoroutine(SpawnOrdinaryBalloons());
             StartCoroutine(SpawnSurpriseBalloons());
         }
-
-        private void OnEnable() => 
-            HideBalloon += BalloonHide;
-
-        private void OnDisable() => 
-            HideBalloon -= BalloonHide;
-
+        
         private void BalloonHide(Balloon balloon) => 
             balloonFactory.ReturnBalloonInPool(balloon);
 
-        public IEnumerator SpawnOrdinaryBalloons()
+        private IEnumerator SpawnOrdinaryBalloons()
         {
             while (true)
             {
@@ -52,7 +51,7 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
             }
         }
 
-        public IEnumerator SpawnSurpriseBalloons()
+        private IEnumerator SpawnSurpriseBalloons()
         {
             while (true)
             {

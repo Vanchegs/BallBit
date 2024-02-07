@@ -11,8 +11,12 @@ namespace Internal.Codebase.UILogic.CounterLogic
         
         private TMP_Text countText;
 
-        private void Start() =>
+        private void Start()
+        {
             countText = GetComponent<TMP_Text>();
+            
+            GameEventBus.WalletChange?.Invoke(Count);
+        }
 
         private void OnEnable()
         {

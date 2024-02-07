@@ -6,8 +6,7 @@ namespace Internal.Codebase.UILogic.StoreLogic
 {
     public class ShopSign : MonoBehaviour
     {
-        [field: SerializeField] public bool IsBuy { get; private set; }
-        [field: SerializeField] public int ProductPrice { get; private set; }
+        private ShopItem shopItem;
         
         [SerializeField] private TMP_Text nameStoreSign;
         [SerializeField] private TMP_Text descriptionStoreSign;
@@ -19,17 +18,19 @@ namespace Internal.Codebase.UILogic.StoreLogic
 
         private void Start()
         {
+            shopItem = GetComponent<ShopItem>();
+            
             CheckIsBuy();
 
             SettingPrice();
         }
 
         private void SettingPrice() => 
-            buyButtonText.text = $"{ProductPrice}";
+            buyButtonText.text = $"{shopItem.ProductPrice}";
 
         private void CheckIsBuy()
         {
-            if (IsBuy) return;
+            if (shopItem.IsBuy) return;
             nameStoreSign.gameObject.SetActive(false);
             descriptionStoreSign.gameObject.SetActive(false);
             imageOfProduct.gameObject.SetActive(false);
