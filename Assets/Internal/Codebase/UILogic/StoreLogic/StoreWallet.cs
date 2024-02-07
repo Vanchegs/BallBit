@@ -1,4 +1,5 @@
 using System;
+using Internal.Codebase.Common;
 using TMPro;
 using UnityEngine;
 
@@ -6,17 +7,15 @@ namespace Internal.Codebase.UILogic.StoreLogic
 {
     public class StoreWallet : MonoBehaviour
     {
-        public int WalletCount { get; private set; }
+        private int WalletCount { get; set; }
 
         private TMP_Text walletText;
 
-        public static Action<int> WalletChange;
-
         private void OnEnable() => 
-            WalletChange += WalletCountChange;
+            GameEventBus.WalletChange += WalletCountChange;
 
         private void OnDisable() => 
-            WalletChange += WalletCountChange;
+            GameEventBus.WalletChange += WalletCountChange;
 
         private void Start() => 
             walletText = GetComponent<TMP_Text>();

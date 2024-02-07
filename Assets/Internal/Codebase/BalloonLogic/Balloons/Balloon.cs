@@ -12,9 +12,6 @@ namespace Internal.Codebase.BalloonLogic.Balloons
 
         protected Transform BalloonTransform;
 
-        public static Action OrdinaryBalloonBit;
-        public static Action SurpriseBalloonBit;
-
         public virtual void BalloonBit()
         {
             BalloonSpawner.HideBalloon(this);

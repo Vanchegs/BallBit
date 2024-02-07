@@ -1,4 +1,5 @@
 using Internal.Codebase.BalloonLogic.BalloonCreateLogic;
+using Internal.Codebase.Common;
 using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic.Balloons
@@ -24,7 +25,7 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         {
             BalloonSpawner.HideBalloon(this);
             RandomizationStartPosition();
-            SurpriseBalloonBit?.Invoke();
+            GameEventBus.SurpriseBalloonBit?.Invoke();
         }
     }
 }

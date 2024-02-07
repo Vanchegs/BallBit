@@ -1082,6 +1082,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.92549026
       objectReference: {fileID: 0}
+    - target: {fileID: 4602094214330953428, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
+      propertyPath: m_Name
+      value: StoreWallet
+      objectReference: {fileID: 0}
     - target: {fileID: 6625019718698285087, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
       propertyPath: m_text
       value: 0
@@ -1202,14 +1206,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4602094214330953428, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5536754499324826653}
+      addedObject: {fileID: 6155858673701028714}
   m_SourcePrefab: {fileID: 100100000, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
 --- !u!1 &2330123758827872572 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4602094214330953428, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
   m_PrefabInstance: {fileID: 2273103369481588712}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5536754499324826653
+--- !u!114 &6155858673701028714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1218,7 +1222,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2330123758827872572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5754d76670e0a6646a3615afeec2ea1d, type: 3}
+  m_Script: {fileID: 11500000, guid: d94f3cd8845f529458f0b4420af4737c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &8056481752017995905 stripped

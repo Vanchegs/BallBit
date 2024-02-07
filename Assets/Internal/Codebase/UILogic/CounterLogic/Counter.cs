@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
-using Internal.Codebase.BalloonLogic.Balloons;
+using Internal.Codebase.Common;
 
 namespace Internal.Codebase.UILogic.CounterLogic
 {
@@ -16,14 +16,14 @@ namespace Internal.Codebase.UILogic.CounterLogic
 
         private void OnEnable()
         {
-            Balloon.SurpriseBalloonBit += CountRandomChange;
-            Balloon.OrdinaryBalloonBit += CountIncrease;
+            GameEventBus.SurpriseBalloonBit += CountRandomChange;
+            GameEventBus.OrdinaryBalloonBit += CountIncrease;
         }
 
         private void OnDisable()
         {
-            Balloon.SurpriseBalloonBit -= CountRandomChange;
-            Balloon.OrdinaryBalloonBit -= CountIncrease;
+            GameEventBus.SurpriseBalloonBit -= CountRandomChange;
+            GameEventBus.OrdinaryBalloonBit -= CountIncrease;
         }
 
         private void CountIncrease()
@@ -31,6 +31,8 @@ namespace Internal.Codebase.UILogic.CounterLogic
             Count++;
 
             countText.text = $"{Count}";
+            
+            GameEventBus.WalletChange?.Invoke(Count);
         }
 
         private void CountRandomChange()
@@ -40,6 +42,8 @@ namespace Internal.Codebase.UILogic.CounterLogic
             Count += changeNumber;
             
             countText.text = $"{Count}";
+            
+            GameEventBus.WalletChange?.Invoke(Count);
         }
     }
 }
