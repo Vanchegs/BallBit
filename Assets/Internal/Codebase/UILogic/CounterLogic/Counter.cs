@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using Internal.Codebase.Infrastructure;
+using Internal.Codebase.UILogic.StoreLogic;
 
 namespace Internal.Codebase.UILogic.CounterLogic
 {
@@ -36,14 +37,14 @@ namespace Internal.Codebase.UILogic.CounterLogic
         {
             Count++;
             
-            GameEventBus.OnWalletChange?.Invoke(Count);
-            
             countText.text = $"{Count}";
+            
+            GameEventBus.OnWalletChange?.Invoke(Count);
         }
 
         private void CountRandomChange()
         {
-            int changeNumber = Random.Range(-10, 10);
+            var changeNumber = Random.Range(-10, 10);
             
             Count += changeNumber;
             

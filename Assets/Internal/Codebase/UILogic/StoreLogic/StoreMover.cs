@@ -21,16 +21,11 @@ namespace Internal.Codebase.UILogic.StoreLogic
             {
                 transform.DOMoveX(0, 1, false);
                 isStoreActivate = true;
-                storeUi.gameObject.SetActive(isStoreActivate);
             }
             else
             {
                 transform.DOMoveX(17.78f, 1, false);
                 isStoreActivate = false;
-
-                await Task.Delay(1000);
-
-                storeUi.gameObject.SetActive(isStoreActivate);
             }
         }
     }

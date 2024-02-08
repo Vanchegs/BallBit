@@ -14,8 +14,6 @@ namespace Internal.Codebase.UILogic.StoreLogic
         
         [SerializeField] private Image imageOfProduct;
 
-        [SerializeField] private Button buyButton;
-
         private void Start()
         {
             shopItem = GetComponent<ShopItem>();

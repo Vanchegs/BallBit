@@ -312,7 +312,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2337931925126319052}
+      - m_Target: {fileID: 1789027834278004989}
         m_TargetAssemblyTypeName: Internal.Codebase.UILogic.StoreLogic.StoreMover,
           Assembly-CSharp
         m_MethodName: MoveStore
@@ -663,7 +663,7 @@ PrefabInstance:
     - target: {fileID: 1576296388209950083, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2337931925126319052}
+      objectReference: {fileID: 1789027834278004989}
     - target: {fileID: 1576296388209950083, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MoveStore
@@ -828,23 +828,14 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2753452403823903645, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
       insertIndex: 0
       addedObject: {fileID: 7263536982577917982}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4985035008975409105, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2337931925126319052}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
---- !u!1 &99808392801603140 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4985035008975409105, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
+--- !u!114 &1789027834278004989 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6674077979363641704, guid: 2c910e01d0410aa44a4652fa01acee3a, type: 3}
   m_PrefabInstance: {fileID: 4921574409540944277}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2337931925126319052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99808392801603140}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6b916f70b54514196257cb19d9cf71, type: 3}

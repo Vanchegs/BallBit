@@ -8,7 +8,7 @@ namespace Internal.Codebase.UILogic.StoreLogic
     {
         public static StoreWallet Wallet { get; private set; }
         
-        public int WalletCount { get; set; }
+        public int WalletCount { get; private set; }
 
         private TMP_Text walletText;
 

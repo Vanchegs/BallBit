@@ -11,7 +11,7 @@ namespace Internal.Codebase.Infrastructure
         
         public static Action<Balloon> OnHideBalloon;
         
-        public static Action<int> OnWalletChange;
+        public static Action<int> OnWalletChange; 
         public static Action<int> OnWritingOffCount;
     }
 }
