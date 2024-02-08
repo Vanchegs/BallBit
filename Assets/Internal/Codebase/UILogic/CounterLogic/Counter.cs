@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
-using Internal.Codebase.Common;
+using Internal.Codebase.Infrastructure;
 
 namespace Internal.Codebase.UILogic.CounterLogic
 {
@@ -15,39 +15,48 @@ namespace Internal.Codebase.UILogic.CounterLogic
         {
             countText = GetComponent<TMP_Text>();
             
-            GameEventBus.WalletChange?.Invoke(Count);
+            GameEventBus.OnWalletChange?.Invoke(Count);
         }
 
         private void OnEnable()
         {
-            GameEventBus.SurpriseBalloonBit += CountRandomChange;
-            GameEventBus.OrdinaryBalloonBit += CountIncrease;
+            GameEventBus.OnSurpriseBalloonBit += CountRandomChange;
+            GameEventBus.OnOrdinaryBalloonBit += CountIncrease;
+            GameEventBus.OnWritingOffCount += WritingOffCount;
         }
 
         private void OnDisable()
         {
-            GameEventBus.SurpriseBalloonBit -= CountRandomChange;
-            GameEventBus.OrdinaryBalloonBit -= CountIncrease;
+            GameEventBus.OnSurpriseBalloonBit -= CountRandomChange;
+            GameEventBus.OnOrdinaryBalloonBit -= CountIncrease;
+            GameEventBus.OnWritingOffCount -= WritingOffCount;
         }
 
         private void CountIncrease()
         {
             Count++;
-
-            countText.text = $"{Count}";
             
-            GameEventBus.WalletChange?.Invoke(Count);
+            GameEventBus.OnWalletChange?.Invoke(Count);
+            
+            countText.text = $"{Count}";
         }
 
         private void CountRandomChange()
         {
             int changeNumber = Random.Range(-10, 10);
-
+            
             Count += changeNumber;
             
+            if (Count < 0) Count = 0;
             countText.text = $"{Count}";
             
-            GameEventBus.WalletChange?.Invoke(Count);
+            GameEventBus.OnWalletChange?.Invoke(Count);
+        }
+        
+        private void WritingOffCount(int productPrice)
+        {
+            Count -= productPrice;
+            countText.text = $"{Count}";
         }
     }
 }

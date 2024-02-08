@@ -1,3 +1,4 @@
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
 namespace Internal.Codebase.UILogic.StoreLogic
@@ -9,18 +10,17 @@ namespace Internal.Codebase.UILogic.StoreLogic
         [field: SerializeField] public bool IsBuy { get; private set; }
         
         [field: SerializeField] public int ProductPrice { get; private set; }
-        
-
-        [SerializeField] private StoreWallet storeWallet;
 
         private void Start() => 
             shopSign = GetComponent<ShopSign>();
 
         public void TryBuy()
         {
-            if (storeWallet.WalletCount >= ProductPrice)
+            if (StoreWallet.Wallet.WalletCount >= ProductPrice)
             {
                 Buy();
+                
+                GameEventBus.OnWritingOffCount?.Invoke(ProductPrice);
                 
                 shopSign.CheckIsBuy();
             }

@@ -1,5 +1,6 @@
 using Internal.Codebase.BalloonLogic.BalloonCreateLogic;
 using Internal.Codebase.Common;
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic.Balloons
@@ -23,9 +24,9 @@ namespace Internal.Codebase.BalloonLogic.Balloons
 
         public override void BalloonBit()
         {
-            GameEventBus.HideBalloon(this);
+            GameEventBus.OnHideBalloon(this);
             RandomizationStartPosition();
-            GameEventBus.SurpriseBalloonBit?.Invoke();
+            GameEventBus.OnSurpriseBalloonBit?.Invoke();
         }
     }
 }

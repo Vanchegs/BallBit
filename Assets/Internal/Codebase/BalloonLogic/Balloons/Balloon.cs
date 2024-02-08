@@ -15,14 +15,14 @@ namespace Internal.Codebase.BalloonLogic.Balloons
 
         public virtual void BalloonBit()
         {
-            GameEventBus.HideBalloon(this);
+            GameEventBus.OnHideBalloon(this);
             
             RandomizationStartPosition();
         }
 
         private void BalloonDestroy()
         {
-            GameEventBus.HideBalloon(this);
+            GameEventBus.OnHideBalloon(this);
             RandomizationStartPosition();
         }
 
@@ -35,7 +35,7 @@ namespace Internal.Codebase.BalloonLogic.Balloons
         protected void CheckDeleteHeight()
         {
             if (!(BalloonTransform.position.y > 10)) return;
-            GameEventBus.HideBalloon?.Invoke(this);
+            GameEventBus.OnHideBalloon?.Invoke(this);
             RandomizationStartPosition();
         }
 

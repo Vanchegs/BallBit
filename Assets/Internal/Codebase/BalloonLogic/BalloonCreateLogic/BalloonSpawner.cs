@@ -3,6 +3,7 @@ using System.Collections;
 using Internal.Codebase.BalloonLogic.Balloons;
 using Internal.Codebase.BalloonLogic.BalloonsConfigs;
 using Internal.Codebase.Common;
+using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
 namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
@@ -28,10 +29,10 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
         }
         
         private void OnEnable() => 
-            GameEventBus.HideBalloon += BalloonHide;
+            GameEventBus.OnHideBalloon += BalloonHide;
          
         private void OnDisable() => 
-            GameEventBus.HideBalloon -= BalloonHide;
+            GameEventBus.OnHideBalloon -= BalloonHide;
 
         private void CoroutineStarting()
         {
