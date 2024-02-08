@@ -1,24 +1,23 @@
-using System;
-using Internal.Codebase.Common;
 using TMPro;
 using UnityEngine;
+using Internal.Codebase.Common;
 
 namespace Internal.Codebase.UILogic.StoreLogic
 {
     public class StoreWallet : MonoBehaviour
     {
-        private int WalletCount { get; set; }
+        public int WalletCount { get; set; }
 
         private TMP_Text walletText;
 
+        private void Awake() => 
+            walletText = GetComponent<TMP_Text>();
+        
         private void OnEnable() => 
             GameEventBus.WalletChange += WalletCountChange;
 
         private void OnDisable() => 
             GameEventBus.WalletChange += WalletCountChange;
-
-        private void Start() => 
-            walletText = GetComponent<TMP_Text>();
 
         private void WalletCountChange(int changeCount)
         {

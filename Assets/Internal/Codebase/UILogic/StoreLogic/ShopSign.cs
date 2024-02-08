@@ -28,12 +28,20 @@ namespace Internal.Codebase.UILogic.StoreLogic
         private void SettingPrice() => 
             buyButtonText.text = $"{shopItem.ProductPrice}";
 
-        private void CheckIsBuy()
+        public void CheckIsBuy()
         {
-            if (shopItem.IsBuy) return;
-            nameStoreSign.gameObject.SetActive(false);
-            descriptionStoreSign.gameObject.SetActive(false);
-            imageOfProduct.gameObject.SetActive(false);
+            if (!shopItem.IsBuy)
+            {
+                nameStoreSign.gameObject.SetActive(false);
+                descriptionStoreSign.gameObject.SetActive(false);
+                imageOfProduct.gameObject.SetActive(false);
+            }
+            else
+            {
+                nameStoreSign.gameObject.SetActive(true);
+                descriptionStoreSign.gameObject.SetActive(true);
+                imageOfProduct.gameObject.SetActive(true);
+            }
         }
     }
 }

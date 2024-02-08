@@ -594,6 +594,10 @@ PrefabInstance:
       value: -17.503
       objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 155
       objectReference: {fileID: 0}
@@ -783,6 +787,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -18.550009
       objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 50
@@ -974,6 +982,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -17.9
       objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 777
@@ -1185,6 +1197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoreWallet
       objectReference: {fileID: 0}
+    - target: {fileID: 5759317435666773065, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
+      propertyPath: walletText
+      value: 
+      objectReference: {fileID: 4934646865016240119}
     - target: {fileID: 6625019718698285087, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
       propertyPath: m_text
       value: 0
@@ -1302,26 +1318,28 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 3315709745408184643, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4602094214330953428, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6155858673701028714}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
---- !u!1 &2330123758827872572 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4602094214330953428, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
+--- !u!114 &2360382302687677528 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4560576639198610352, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
   m_PrefabInstance: {fileID: 2273103369481588712}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6155858673701028714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2330123758827872572}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d94f3cd8845f529458f0b4420af4737c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4934646865016240119 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6625019718698285087, guid: a1c357f2ed4afa04d838768e73af57dd, type: 3}
+  m_PrefabInstance: {fileID: 2273103369481588712}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &8056481752017995905 stripped
@@ -1365,6 +1383,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -18.505
       objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 999
@@ -1523,6 +1545,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7132075
       objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 227
@@ -1701,6 +1727,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -14.394
       objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 300
@@ -1889,6 +1919,10 @@ PrefabInstance:
       value: -18.55
       objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 555
       objectReference: {fileID: 0}
@@ -2068,6 +2102,10 @@ PrefabInstance:
       value: -16.430017
       objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 250
       objectReference: {fileID: 0}
@@ -2238,6 +2276,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -18.550001
       objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 370
@@ -2417,6 +2459,10 @@ PrefabInstance:
       value: 22.699999
       objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 450
       objectReference: {fileID: 0}
@@ -2590,6 +2636,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -18.550001
       objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 1
@@ -2781,6 +2831,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -17.502003
       objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: storeWallet
+      value: 
+      objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 100
