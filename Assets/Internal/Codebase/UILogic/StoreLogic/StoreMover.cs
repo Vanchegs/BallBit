@@ -10,6 +10,8 @@ namespace Internal.Codebase.UILogic.StoreLogic
         private bool isStoreActivate;
 
         [SerializeField] private GameObject storeCatalog;
+        [SerializeField] private RectTransform startPosition;
+        [SerializeField] private RectTransform finalPosition;
 
         private void Start() =>
             storeCatalog.SetActive(false);
@@ -20,12 +22,12 @@ namespace Internal.Codebase.UILogic.StoreLogic
             {
                 storeCatalog.SetActive(true);
                 
-                transform.DOMoveX(0, 1, false);
+                transform.DOMoveX(finalPosition.position.x, 1, false);
                 isStoreActivate = true;
             }
             else
             {
-                transform.DOMoveX(17.78f, 1f, false);
+                transform.DOMoveX(startPosition.position.x, 1, false);
                 isStoreActivate = false;
 
                 await Task.Delay(800);

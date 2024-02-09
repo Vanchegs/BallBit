@@ -18,15 +18,25 @@ namespace Internal.Codebase.UILogic.StoreLogic
         {
             if (StoreWallet.Wallet.WalletCount >= ProductPrice)
             {
-                Buy();
-                
-                GameEventBus.OnWritingOffCount?.Invoke(ProductPrice);
-                
-                shopSign.CheckIsBuy();
+                switch (IsBuy)
+                {
+                    case false:
+                        Buy();
+                        break;
+                    
+                    default:
+                        return;
+                }
             }
         }
 
-        private void Buy() =>
+        private void Buy()
+        {
             IsBuy = true;
+            
+            GameEventBus.OnWritingOffCount?.Invoke(ProductPrice);
+                                    
+            shopSign.CheckIsBuy();
+        }
     }
 }
