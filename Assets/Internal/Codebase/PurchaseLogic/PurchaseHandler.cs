@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Internal.Codebase.Saves;
 using Internal.Codebase.UILogic.StoreLogic;
 using UnityEngine;
 
@@ -10,11 +11,11 @@ namespace Internal.Codebase.PurchaseLogic
         [field: SerializeField] public List<GameObject> NameShopItems { get; private set; } = new();
         [field: SerializeField] public List<ShopItem> ShopItems { get; private set; } = new();
 
-        private Dictionary<string, bool> shopItemsForSave;
+        private DataForSave dataForSave;
 
         private void Start()
         {
-            shopItemsForSave = new Dictionary<string, bool>()
+            dataForSave.ShopItemsForSave = new Dictionary<string, bool>
             {
                 { NameShopItems[0].name, ShopItems[0].IsBuy },
                 { NameShopItems[1].name, ShopItems[1].IsBuy },

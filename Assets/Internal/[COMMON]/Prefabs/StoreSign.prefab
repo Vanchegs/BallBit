@@ -97,7 +97,6 @@ MonoBehaviour:
   descriptionStoreSign: {fileID: 7994545312447975351}
   buyButtonText: {fileID: 4370080427649683760}
   imageOfProduct: {fileID: 2397800128650711368}
-  buyButton: {fileID: 3028985565529207877}
 --- !u!114 &2680182016268624379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsBuy>k__BackingField: 0
   <ProductPrice>k__BackingField: 0
-  storeWallet: {fileID: 0}
 --- !u!1 &2528671628252252354
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,9 +622,9 @@ RectTransform:
   - {fileID: 3001764788899545098}
   m_Father: {fileID: 5121795279741720441}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 388.59705, y: 0.000013351}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 708.59705, y: 0.000013351}
   m_SizeDelta: {x: 110, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4639738107605875834
