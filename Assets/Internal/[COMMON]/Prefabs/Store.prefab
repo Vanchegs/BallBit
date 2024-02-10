@@ -303,6 +303,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storeCatalog: {fileID: 889055697994463298}
+  startPosition: {fileID: 0}
+  finalPosition: {fileID: 0}
 --- !u!1 &5225342651963612204
 GameObject:
   m_ObjectHideFlags: 0
