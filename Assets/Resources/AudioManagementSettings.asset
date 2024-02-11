@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c4b74c665a4f32b243af99bcf5e324, type: 3}
-  m_Name: AirStoreSignConfig
+  m_Script: {fileID: 11500000, guid: 8033750b781c4482b8afb057efb27eff, type: 3}
+  m_Name: AudioManagementSettings
   m_EditorClassIdentifier: 
-  <ProductNameText>k__BackingField: {fileID: 0}
-  <ProductDescriptionText>k__BackingField: {fileID: 0}
-  <ProductIconText>k__BackingField: {fileID: 0}
-  <ProductPrice>k__BackingField: 0
+  CanDebug: 1
+  CanValidate: 1
+  _database: {fileID: 11400000, guid: da774e93b7787d14c8b7b4beacf4ba12, type: 2}

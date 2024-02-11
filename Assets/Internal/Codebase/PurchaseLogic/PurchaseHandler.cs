@@ -11,7 +11,7 @@ namespace Internal.Codebase.PurchaseLogic
         [field: SerializeField] public List<GameObject> NameShopItems { get; private set; } = new();
         [field: SerializeField] public List<ShopItem> ShopItems { get; private set; } = new();
 
-        private DataForSave dataForSave;
+        private DataForSave dataForSave = new();
 
         private void Start()
         {
