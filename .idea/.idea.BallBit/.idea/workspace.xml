@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="51d5c777-bec9-4887-bcd3-7ed234ad99ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/PurchaseHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/PurchaseHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Saves/DataForSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Saves/DataForSave.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/PurchaseHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/PurchaseHandler.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/CounterLogic/Counter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/CounterLogic/Counter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/ShopItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/ShopItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/SavesYG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/SavesYG.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Store.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Store.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/BalloonLogic/BalloonsConfigs/BalloonsConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Common/CameraAdapter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/GameEventBus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/PurchaseHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/Saver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Saves/DataForSave.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/CounterLogic/Counter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/ShopItem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -245,6 +243,7 @@
       <workItem from="1707593165503" duration="76000" />
       <workItem from="1707661845717" duration="2089000" />
       <workItem from="1707748336932" duration="4217000" />
+      <workItem from="1707755592571" duration="859000" />
     </task>
     <servers />
   </component>

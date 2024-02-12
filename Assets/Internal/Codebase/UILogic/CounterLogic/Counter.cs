@@ -45,7 +45,7 @@ namespace Internal.Codebase.UILogic.CounterLogic
             
             GameEventBus.OnWalletChange?.Invoke(Count);
 
-            PurchaseHandler.SavesData.WalletCount = Count;
+            Saver.SavesData.WalletCount = Count;
         }
 
         private void CountRandomChange()
@@ -59,7 +59,7 @@ namespace Internal.Codebase.UILogic.CounterLogic
             
             GameEventBus.OnWalletChange?.Invoke(Count);
             
-            PurchaseHandler.SavesData.WalletCount = Count;
+            Saver.SavesData.WalletCount = Count;
         }
         
         private void WritingOffCount(int productPrice)
