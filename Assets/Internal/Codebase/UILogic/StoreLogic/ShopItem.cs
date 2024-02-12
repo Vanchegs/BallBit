@@ -5,6 +5,8 @@ namespace Internal.Codebase.UILogic.StoreLogic
 {
     public class ShopItem : MonoBehaviour
     {
+        public int id;
+        
         private ShopSign shopSign;
         
         [field: SerializeField] public bool IsBuy { get; private set; }

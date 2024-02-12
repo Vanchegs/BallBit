@@ -7,6 +7,6 @@ namespace Internal.Codebase.Saves
     {
         public int WalletCount { get; set; }
         
-        public Dictionary<string, bool> ShopItemsForSave;
+        public Dictionary<int, bool> ShopItemsForSave;
     }
 }

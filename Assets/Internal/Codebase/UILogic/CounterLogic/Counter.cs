@@ -2,7 +2,8 @@ using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using Internal.Codebase.Infrastructure;
-using Internal.Codebase.UILogic.StoreLogic;
+using Internal.Codebase.PurchaseLogic;
+using YG;
 
 namespace Internal.Codebase.UILogic.CounterLogic
 {
@@ -14,6 +15,9 @@ namespace Internal.Codebase.UILogic.CounterLogic
 
         private void Start()
         {
+            if (YandexGame.SDKEnabled) 
+                Count = YandexGame.savesData.dataForSave.WalletCount;
+
             countText = GetComponent<TMP_Text>();
             
             GameEventBus.OnWalletChange?.Invoke(Count);
@@ -40,6 +44,8 @@ namespace Internal.Codebase.UILogic.CounterLogic
             countText.text = $"{Count}";
             
             GameEventBus.OnWalletChange?.Invoke(Count);
+
+            PurchaseHandler.SavesData.WalletCount = Count;
         }
 
         private void CountRandomChange()
@@ -52,6 +58,8 @@ namespace Internal.Codebase.UILogic.CounterLogic
             countText.text = $"{Count}";
             
             GameEventBus.OnWalletChange?.Invoke(Count);
+            
+            PurchaseHandler.SavesData.WalletCount = Count;
         }
         
         private void WritingOffCount(int productPrice)
