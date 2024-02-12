@@ -5,30 +5,21 @@ namespace Internal.Codebase.UILogic.StoreLogic
 {
     public class ShopItem : MonoBehaviour
     {
-        public int id;
+        public ShopSign shopSign;
         
-        private ShopSign shopSign;
-        
+        [field: SerializeField] public int Id { get; private set; }
         [field: SerializeField] public bool IsBuy { get; private set; }
-        
         [field: SerializeField] public int ProductPrice { get; private set; }
 
-        private void Start() => 
+        private void Start() =>
             shopSign = GetComponent<ShopSign>();
 
         public void TryBuy()
         {
             if (StoreWallet.Wallet.WalletCount >= ProductPrice)
             {
-                switch (IsBuy)
-                {
-                    case false:
-                        Buy();
-                        break;
-                    
-                    default:
-                        return;
-                }
+                if (!IsBuy)
+                    Buy();
             }
         }
 
@@ -40,5 +31,8 @@ namespace Internal.Codebase.UILogic.StoreLogic
                                     
             shopSign.CheckIsBuy();
         }
+
+        public Item GetItem() =>
+            new(Id, IsBuy, ProductPrice);
     }
 }

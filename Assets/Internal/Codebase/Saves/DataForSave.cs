@@ -1,12 +1,14 @@
+using System;
 using System.Collections.Generic;
-using UnityEngine;
+using Internal.Codebase.UILogic.StoreLogic;
 
 namespace Internal.Codebase.Saves
 {
-    public class DataForSave : MonoBehaviour
+    [Serializable]
+    public class DataForSave
     {
-        public int WalletCount { get; set; }
+        public int Currency;
         
-        public Dictionary<int, bool> ShopItemsForSave;
+        public List<Item> ItemsForSave;
     }
 }

@@ -6,13 +6,15 @@ namespace Internal.Codebase.UILogic.StoreLogic
 {
     public class ShopSign : MonoBehaviour
     {
+        public Button Button;
+        
         private ShopItem shopItem;
         
-        [SerializeField] private TMP_Text nameStoreSign;
-        [SerializeField] private TMP_Text descriptionStoreSign;
-        [SerializeField] private TMP_Text buyButtonText;
+        public TMP_Text nameStoreSign;
+        public TMP_Text descriptionStoreSign;
+        public TMP_Text buyButtonText;
         
-        [SerializeField] private Image imageOfProduct;
+        public Image imageOfProduct;
 
         private void Start()
         {

@@ -1,5 +1,6 @@
 using System;
 using Internal.Codebase.BalloonLogic.Balloons;
+using Internal.Codebase.Saves;
 using UnityEngine;
 
 namespace Internal.Codebase.Infrastructure
@@ -11,7 +12,9 @@ namespace Internal.Codebase.Infrastructure
         
         public static Action<Balloon> OnHideBalloon;
         
-        public static Action<int> OnWalletChange; 
+        public static Action<int> OnWalletChange;
         public static Action<int> OnWritingOffCount;
+
+        public static Action<DataForSave> OnLoaded;
     }
 }

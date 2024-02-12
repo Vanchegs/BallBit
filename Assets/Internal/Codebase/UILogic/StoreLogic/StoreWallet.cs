@@ -1,9 +1,11 @@
 using TMPro;
 using UnityEngine;
 using Internal.Codebase.Infrastructure;
+using Internal.Codebase.Saves;
 
 namespace Internal.Codebase.UILogic.StoreLogic
 {
+    [RequireComponent(typeof(TMP_Text))]
     public class StoreWallet : MonoBehaviour
     {
         public static StoreWallet Wallet { get; private set; }
@@ -23,13 +25,18 @@ namespace Internal.Codebase.UILogic.StoreLogic
         {
             GameEventBus.OnWalletChange += WalletCountChange;
             GameEventBus.OnWritingOffCount += WritingOffWalletCount;
+            GameEventBus.OnLoaded += Load;
         }
 
         private void OnDisable()
         {
             GameEventBus.OnWalletChange -= WalletCountChange;
             GameEventBus.OnWritingOffCount -= WritingOffWalletCount;
+            GameEventBus.OnLoaded -= Load;
         }
+        
+        private void Load(DataForSave data) => 
+            WalletCount = data.Currency;
 
         private void WalletCountChange(int changeCount)
         {

@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51d5c777-bec9-4887-bcd3-7ed234ad99ef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/Item.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/Shop.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/Shop.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/PurchaseHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/PurchaseHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/Factories/IUIFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/Factories/IUIFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/Factories/UIFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/Factories/UIFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/GameEventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/GameEventBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/Saver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/Saver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Saves/DataForSave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Saves/DataForSave.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/CounterLogic/Counter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/CounterLogic/Counter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Store.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Store.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/ShopItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/ShopItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/ShopSign.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/ShopSign.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/StoreWallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/StoreWallet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/StoreSign.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/StoreSign.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/SavesYG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/SavesYG.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +38,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/BalloonLogic/Balloons/SurpriseBalloon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/BalloonLogic/BalloonsConfigs/BalloonsConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Common/CameraAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Common/ImmortalGO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Common/ImmortalGameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/GameEventBus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/PurchaseLogic/Saver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Saves/DataForSave.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/CounterLogic/Counter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/ShopItem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/StoreMover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/StoreWallet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/64861216782042de93237b5c061bff1b951c00/35/0878d842/InspectorElement.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -89,6 +104,22 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\GitHub\BallBit -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\GitHub\BallBit" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\GitHub\BallBit -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\GitHub\BallBit" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\GitHub\BallBit -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -137,6 +168,26 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21408">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="21408" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -244,6 +295,7 @@
       <workItem from="1707661845717" duration="2089000" />
       <workItem from="1707748336932" duration="4217000" />
       <workItem from="1707755592571" duration="859000" />
+      <workItem from="1707762634158" duration="9490000" />
     </task>
     <servers />
   </component>

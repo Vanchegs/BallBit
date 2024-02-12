@@ -2,32 +2,26 @@ using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using Internal.Codebase.Infrastructure;
-using Internal.Codebase.PurchaseLogic;
-using YG;
+using Internal.Codebase.Saves;
 
 namespace Internal.Codebase.UILogic.CounterLogic
 {
+    [RequireComponent(typeof(TMP_Text))]
     public class Counter : MonoBehaviour
     {
         public int Count { get; private set; }
         
         private TMP_Text countText;
 
-        private void Start()
-        {
-            if (YandexGame.SDKEnabled) 
-                Count = YandexGame.savesData.dataForSave.WalletCount;
-
+        private void Start() =>
             countText = GetComponent<TMP_Text>();
-            
-            GameEventBus.OnWalletChange?.Invoke(Count);
-        }
 
         private void OnEnable()
         {
             GameEventBus.OnSurpriseBalloonBit += CountRandomChange;
             GameEventBus.OnOrdinaryBalloonBit += CountIncrease;
             GameEventBus.OnWritingOffCount += WritingOffCount;
+            GameEventBus.OnLoaded += Load;
         }
 
         private void OnDisable()
@@ -35,7 +29,11 @@ namespace Internal.Codebase.UILogic.CounterLogic
             GameEventBus.OnSurpriseBalloonBit -= CountRandomChange;
             GameEventBus.OnOrdinaryBalloonBit -= CountIncrease;
             GameEventBus.OnWritingOffCount -= WritingOffCount;
+            GameEventBus.OnLoaded -= Load;
         }
+
+        private void Load(DataForSave data) => 
+            Count = data.Currency;
 
         private void CountIncrease()
         {
@@ -45,7 +43,8 @@ namespace Internal.Codebase.UILogic.CounterLogic
             
             GameEventBus.OnWalletChange?.Invoke(Count);
 
-            Saver.SavesData.WalletCount = Count;
+            Saver.Self.SavesData.Currency = Count;
+            Saver.Self.Save();
         }
 
         private void CountRandomChange()
@@ -59,7 +58,8 @@ namespace Internal.Codebase.UILogic.CounterLogic
             
             GameEventBus.OnWalletChange?.Invoke(Count);
             
-            Saver.SavesData.WalletCount = Count;
+            Saver.Self.SavesData.Currency = Count;
+            Saver.Self.Save();
         }
         
         private void WritingOffCount(int productPrice)

@@ -511,6 +511,65 @@ Transform:
   - {fileID: 1466364031}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &346053788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 346053791}
+  - component: {fileID: 346053790}
+  - component: {fileID: 346053789}
+  m_Layer: 0
+  m_Name: LogicObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &346053789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346053788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46685a7b9384dc79121ca236866171c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &346053790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346053788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3f2182b808b0049aaa3ee951953bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setParentNull: 1
+  includeImmortalGameObject: 0
+--- !u!4 &346053791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346053788}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.32032102, y: 0.59303457, z: -10.176799}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &507265460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,6 +1163,7 @@ MonoBehaviour:
   - {fileID: 6140205246721206200, guid: 279c89d5b74f19141a988098faf99e50, type: 3}
   spawnPosition:
   - {fileID: 507265461}
+  shop: {fileID: 0}
 --- !u!1 &1376472039
 GameObject:
   m_ObjectHideFlags: 1
@@ -1779,3 +1839,4 @@ SceneRoots:
   - {fileID: 737240200}
   - {fileID: 2009528755}
   - {fileID: 1758852658}
+  - {fileID: 346053791}

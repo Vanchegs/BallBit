@@ -1,6 +1,5 @@
 ﻿
 using Internal.Codebase.Saves;
-using UnityEngine.Serialization;
 
 namespace YG
 {
