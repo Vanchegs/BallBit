@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using Internal.Codebase.Infrastructure;
@@ -19,22 +20,27 @@ namespace Internal.Codebase.UILogic.StoreLogic
             Wallet = this;
             
             walletText = GetComponent<TMP_Text>();
+            
+            GameEventBus.OnLoaded += Load;
         }
 
         private void OnEnable()
         {
             GameEventBus.OnWalletChange += WalletCountChange;
             GameEventBus.OnWritingOffCount += WritingOffWalletCount;
-            GameEventBus.OnLoaded += Load;
         }
 
         private void OnDisable()
         {
             GameEventBus.OnWalletChange -= WalletCountChange;
             GameEventBus.OnWritingOffCount -= WritingOffWalletCount;
+        }
+
+        private void OnDestroy()
+        {
             GameEventBus.OnLoaded -= Load;
         }
-        
+
         private void Load(DataForSave data) => 
             WalletCount = data.Currency;
 

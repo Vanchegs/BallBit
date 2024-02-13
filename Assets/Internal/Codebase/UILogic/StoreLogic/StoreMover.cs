@@ -13,15 +13,10 @@ namespace Internal.Codebase.UILogic.StoreLogic
         [SerializeField] private RectTransform startPosition;
         [SerializeField] private RectTransform finalPosition;
 
-        private void Start() =>
-            storeCatalog.SetActive(false);
-
-        public async void MoveStore()
+        public void MoveStore()
         {
             if (isStoreActivate == false)
             {
-                storeCatalog.SetActive(true);
-                
                 transform.DOMoveX(finalPosition.position.x, 1, false);
                 isStoreActivate = true;
             }
@@ -29,11 +24,6 @@ namespace Internal.Codebase.UILogic.StoreLogic
             {
                 transform.DOMoveX(startPosition.position.x, 1, false);
                 isStoreActivate = false;
-
-                await Task.Delay(800);
-                
-                if (isStoreActivate == false)
-                    storeCatalog.SetActive(false);
             }
         }
     }

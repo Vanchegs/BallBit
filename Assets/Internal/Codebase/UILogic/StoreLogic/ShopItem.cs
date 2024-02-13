@@ -13,26 +13,5 @@ namespace Internal.Codebase.UILogic.StoreLogic
 
         private void Start() =>
             shopSign = GetComponent<ShopSign>();
-
-        public void TryBuy()
-        {
-            if (StoreWallet.Wallet.WalletCount >= ProductPrice)
-            {
-                if (!IsBuy)
-                    Buy();
-            }
-        }
-
-        private void Buy()
-        {
-            IsBuy = true;
-            
-            GameEventBus.OnWritingOffCount?.Invoke(ProductPrice);
-                                    
-            shopSign.CheckIsBuy();
-        }
-
-        public Item GetItem() =>
-            new(Id, IsBuy, ProductPrice);
     }
 }

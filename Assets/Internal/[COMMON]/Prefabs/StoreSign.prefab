@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59a4254062afe134889dd6f413d85e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shopSign: {fileID: 8678821259163134606}
   <Id>k__BackingField: 0
   <IsBuy>k__BackingField: 0
   <ProductPrice>k__BackingField: 0

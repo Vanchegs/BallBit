@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Internal.Codebase.Saves;
 using Internal.Codebase.UILogic.StoreLogic;
@@ -12,16 +13,31 @@ namespace Internal.Codebase.Infrastructure.Factories
 
         [SerializeField] private Shop shop;
 
-        private void Start() => 
+        private void Awake() => 
             GameEventBus.OnLoaded += Load;
 
-        private void Load(DataForSave obj) => 
-            UICreate(uiListToSpawn[0], spawnPosition[0], obj);
+        private void Start()
+        {
+            shop = FindObjectOfType<Shop>(true);
+        }
+
+        private void Load(DataForSave data)
+        {
+            Debug.Log(uiListToSpawn[0] == null);
+            Debug.Log(spawnPosition == null);
+            Debug.Log(data == null);
+            UICreate(uiListToSpawn[0], spawnPosition[0], data);
+        }
 
         public void UICreate(GameObject prefab, Transform spawnPosition, DataForSave data)
         {
+            shop = FindObjectOfType<Shop>(true);
+            Debug.Log(shop == null);
             var i = Instantiate(prefab, spawnPosition);
-            shop.Init(i, data);
+            if (shop != null)
+            {
+                shop.Init(i, data);
+            }
         }
     }
 }

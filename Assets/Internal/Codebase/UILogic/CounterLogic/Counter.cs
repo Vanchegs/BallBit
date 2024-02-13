@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -13,6 +14,9 @@ namespace Internal.Codebase.UILogic.CounterLogic
         
         private TMP_Text countText;
 
+        private void Awake() => 
+            GameEventBus.OnLoaded += Load;
+
         private void Start() =>
             countText = GetComponent<TMP_Text>();
 
@@ -21,7 +25,6 @@ namespace Internal.Codebase.UILogic.CounterLogic
             GameEventBus.OnSurpriseBalloonBit += CountRandomChange;
             GameEventBus.OnOrdinaryBalloonBit += CountIncrease;
             GameEventBus.OnWritingOffCount += WritingOffCount;
-            GameEventBus.OnLoaded += Load;
         }
 
         private void OnDisable()
@@ -29,8 +32,11 @@ namespace Internal.Codebase.UILogic.CounterLogic
             GameEventBus.OnSurpriseBalloonBit -= CountRandomChange;
             GameEventBus.OnOrdinaryBalloonBit -= CountIncrease;
             GameEventBus.OnWritingOffCount -= WritingOffCount;
-            GameEventBus.OnLoaded -= Load;
+            
         }
+
+        private void OnDestroy() => 
+            GameEventBus.OnLoaded -= Load;
 
         private void Load(DataForSave data) => 
             Count = data.Currency;

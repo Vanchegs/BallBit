@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 346053791}
   - component: {fileID: 346053790}
   - component: {fileID: 346053789}
+  - component: {fileID: 346053792}
   m_Layer: 0
   m_Name: LogicObject
   m_TagString: Untagged
@@ -570,6 +571,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &346053792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346053788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5755e4c8298df439342cb7a0c322c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SavesData:
+    Currency: 0
+    ItemsForSave: []
+  <shopItems>k__BackingField:
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 1
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 2
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 3
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 4
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 5
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 6
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 7
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 8
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 9
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 10
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 11
+  - IsBuy: 0
+    ProductPrice: 1
+    Id: 12
+  cooldown: 6
 --- !u!1 &507265460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,7 +1217,7 @@ MonoBehaviour:
   - {fileID: 6140205246721206200, guid: 279c89d5b74f19141a988098faf99e50, type: 3}
   spawnPosition:
   - {fileID: 507265461}
-  shop: {fileID: 0}
+  shop: {fileID: 346053789}
 --- !u!1 &1376472039
 GameObject:
   m_ObjectHideFlags: 1

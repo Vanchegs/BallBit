@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 347551584822548650}
-  - component: {fileID: 7415397404884728952}
   m_Layer: 5
   m_Name: "Store\u0421atalog"
   m_TagString: Untagged
@@ -40,31 +39,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7415397404884728952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889055697994463298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5755e4c8298df439342cb7a0c322c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <ShopItemsList>k__BackingField:
-  - {fileID: 5098601664479837308}
-  - {fileID: 2550416256581957610}
-  - {fileID: 6853614883468961118}
-  - {fileID: 2715995042181808019}
-  - {fileID: 7043191401084525518}
-  - {fileID: 7710586715788269094}
-  - {fileID: 7196718308675245059}
-  - {fileID: 7770318843960339482}
-  - {fileID: 4905427847533655327}
-  - {fileID: 7511529382645047356}
-  - {fileID: 2956595776277212146}
-  - {fileID: 745208229438849960}
 --- !u!1 &1173842690953043287
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +184,7 @@ GameObject:
   - component: {fileID: 2788010062848899800}
   - component: {fileID: 7954357619215198499}
   - component: {fileID: 6674077979363641704}
+  - component: {fileID: 3822832548701290289}
   m_Layer: 5
   m_Name: Store
   m_TagString: Untagged
@@ -292,6 +267,31 @@ MonoBehaviour:
   storeCatalog: {fileID: 889055697994463298}
   startPosition: {fileID: 0}
   finalPosition: {fileID: 0}
+--- !u!114 &3822832548701290289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4985035008975409105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a484caf5460ed0a42839057d5251dba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopItems:
+  - {fileID: 5098601664479837308}
+  - {fileID: 2550416256581957610}
+  - {fileID: 6853614883468961118}
+  - {fileID: 2715995042181808019}
+  - {fileID: 7043191401084525518}
+  - {fileID: 7710586715788269094}
+  - {fileID: 7196718308675245059}
+  - {fileID: 7770318843960339482}
+  - {fileID: 4905427847533655327}
+  - {fileID: 7511529382645047356}
+  - {fileID: 2956595776277212146}
+  - {fileID: 745208229438849960}
 --- !u!1 &5225342651963612204
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +588,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 155
       objectReference: {fileID: 0}
@@ -776,6 +780,10 @@ PrefabInstance:
       propertyPath: storeWallet
       value: 
       objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 50
@@ -966,6 +974,10 @@ PrefabInstance:
       propertyPath: storeWallet
       value: 
       objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 777
@@ -1363,6 +1375,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 999
       objectReference: {fileID: 0}
@@ -1519,6 +1535,10 @@ PrefabInstance:
       propertyPath: storeWallet
       value: 
       objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 227
@@ -1696,6 +1716,10 @@ PrefabInstance:
       propertyPath: storeWallet
       value: 
       objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 300
@@ -1883,6 +1907,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 555
       objectReference: {fileID: 0}
@@ -2061,6 +2089,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2360382302687677528}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 250
       objectReference: {fileID: 0}
@@ -2230,6 +2262,10 @@ PrefabInstance:
       propertyPath: storeWallet
       value: 
       objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 370
@@ -2407,6 +2443,10 @@ PrefabInstance:
       propertyPath: storeWallet
       value: 
       objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 450
@@ -2770,6 +2810,10 @@ PrefabInstance:
       propertyPath: storeWallet
       value: 
       objectReference: {fileID: 2360382302687677528}
+    - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
+      propertyPath: <Id>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2680182016268624379, guid: 581a599766f72c9439c67d8eadd06307, type: 3}
       propertyPath: <ProductPrice>k__BackingField
       value: 100

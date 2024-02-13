@@ -11,11 +11,10 @@ namespace Internal.Codebase.Saves
     public class Saver : MonoBehaviour
     {
         public static Saver Self;
+        
+        [HideInInspector] public DataForSave SavesData;
 
-        [HideInInspector]
-        public DataForSave SavesData;
-
-        [field: SerializeField] public List<ShopItem> shopItems { get; private set; } = new();
+        [field: SerializeField] public List<Item> shopItems { get; private set; } = new();
 
         [SerializeField] private int cooldown = 6;
 
@@ -29,7 +28,7 @@ namespace Internal.Codebase.Saves
 
         private void Start()
         {
-            if (YandexGame.SDKEnabled) 
+            if (YandexGame.SDKEnabled)
                 Load();
 
             YandexGame.GetDataEvent += Load;
@@ -45,17 +44,18 @@ namespace Internal.Codebase.Saves
         {
             if (YandexGame.savesData != null)
             {
-                if (YandexGame.savesData.dataForSave.ItemsForSave == null)
+                if (YandexGame.savesData.dataForSave == null)
                     FillDataForSave();
-
-                GameEventBus.OnLoaded?.Invoke(YandexGame.savesData.dataForSave);
             }
             else
             {
                 YandexGame.savesData = new SavesYG();
                 FillDataForSave();
             }
-
+            
+            Debug.Log("EFSDFSEF");
+            GameEventBus.OnLoaded?.Invoke(YandexGame.savesData.dataForSave);
+            
             SavesData = YandexGame.savesData.dataForSave;
 
             if (coroutine == null)
@@ -65,10 +65,9 @@ namespace Internal.Codebase.Saves
         private void FillDataForSave()
         {
             YandexGame.savesData.dataForSave = new DataForSave();
-            YandexGame.savesData.dataForSave.ItemsForSave = shopItems.Select(S => S.GetItem()).ToList();
+            YandexGame.savesData.dataForSave.ItemsForSave = shopItems;
             YandexGame.savesData.dataForSave.ItemsForSave.ForEach(x => { x.IsBuy = false; });
         }
-
 
         private IEnumerator AutoSaver()
         {

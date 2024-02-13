@@ -7,21 +7,21 @@ namespace Internal.Codebase.UILogic.StoreLogic
 {
     public class Shop : MonoBehaviour
     {
-        private List<ShopItem> shopItems;
+        private List<ShopItem> shopItems= new();
 
         public void Init(GameObject canvas, DataForSave dataForSave)
         {
-            shopItems = new();
-            
-            var items = canvas.GetComponentsInChildren<ShopItem>();
+            Debug.Log(canvas == null);
+            Debug.Log(dataForSave == null);
+            Debug.Log(dataForSave.ItemsForSave == null);
 
-            foreach (var item in items)
+            var shopView = FindObjectOfType<ShopView>();
+
+            shopItems = new(shopView.shopItems);
+            
+            foreach (var item in shopItems)
             {
-                if (item != null)
-                {
-                    shopItems.Add(item);
-                    item.shopSign.Button.onClick.AddListener(((() => Buy(item))));
-                }
+                item.shopSign.Button.onClick.AddListener(((() => Buy(item))));
             }
             
             InitShop(dataForSave.ItemsForSave);
