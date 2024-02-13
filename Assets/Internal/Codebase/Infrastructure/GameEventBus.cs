@@ -9,6 +9,8 @@ namespace Internal.Codebase.Infrastructure
     {
         public static Action OnOrdinaryBalloonBit;
         public static Action OnSurpriseBalloonBit;
+
+        public static Action UpdateCountUI;
         
         public static Action<Balloon> OnHideBalloon;
         

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Internal.Codebase.Infrastructure;
 using Internal.Codebase.Saves;
 using UnityEngine;
 
@@ -40,8 +41,8 @@ namespace Internal.Codebase.UILogic.StoreLogic
                         Debug.Log(x.IsBuy);
                     }
                 });
-                Debug.Log(shopItem.Id);
                 UpdateUI();
+                GameEventBus.UpdateCountUI?.Invoke();
                 Saver.Self.Save();
             }
         }

@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="51d5c777-bec9-4887-bcd3-7ed234ad99ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/GameEventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/GameEventBus.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Saves/Saver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Saves/Saver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/CounterLogic/Counter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/CounterLogic/Counter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/Shop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/StoreWallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/StoreWallet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Store.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/Store.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/Editor/SavesEditorYG.json" beforeDir="false" />
@@ -292,7 +294,7 @@
       <workItem from="1707823963023" duration="2174000" />
       <workItem from="1707826481883" duration="733000" />
       <workItem from="1707827249279" duration="300000" />
-      <workItem from="1707847206005" duration="6071000" />
+      <workItem from="1707847206005" duration="8572000" />
     </task>
     <servers />
   </component>

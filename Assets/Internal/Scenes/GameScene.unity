@@ -590,6 +590,39 @@ MonoBehaviour:
   - IsBuy: 0
     ProductPrice: 1
     Id: 0
+  - IsBuy: 0
+    ProductPrice: 50
+    Id: 1
+  - IsBuy: 0
+    ProductPrice: 100
+    Id: 2
+  - IsBuy: 0
+    ProductPrice: 155
+    Id: 3
+  - IsBuy: 0
+    ProductPrice: 227
+    Id: 4
+  - IsBuy: 0
+    ProductPrice: 250
+    Id: 5
+  - IsBuy: 0
+    ProductPrice: 300
+    Id: 6
+  - IsBuy: 0
+    ProductPrice: 370
+    Id: 7
+  - IsBuy: 0
+    ProductPrice: 450
+    Id: 8
+  - IsBuy: 0
+    ProductPrice: 555
+    Id: 9
+  - IsBuy: 0
+    ProductPrice: 777
+    Id: 10
+  - IsBuy: 0
+    ProductPrice: 999
+    Id: 11
   cooldown: 6
 --- !u!1 &507265460
 GameObject:

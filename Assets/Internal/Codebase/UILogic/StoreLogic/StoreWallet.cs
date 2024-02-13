@@ -1,8 +1,8 @@
-using System;
 using TMPro;
 using UnityEngine;
 using Internal.Codebase.Infrastructure;
 using Internal.Codebase.Saves;
+using YG;
 
 namespace Internal.Codebase.UILogic.StoreLogic
 {
@@ -10,8 +10,6 @@ namespace Internal.Codebase.UILogic.StoreLogic
     public class StoreWallet : MonoBehaviour
     {
         public static StoreWallet Wallet { get; private set; }
-        
-        public int WalletCount { get; private set; }
 
         private TMP_Text walletText;
 
@@ -24,16 +22,21 @@ namespace Internal.Codebase.UILogic.StoreLogic
             GameEventBus.OnLoaded += Load;
         }
 
+        private void Start() => 
+            UpdateUI();
+
         private void OnEnable()
         {
             GameEventBus.OnWalletChange += WalletCountChange;
             GameEventBus.OnWritingOffCount += WritingOffWalletCount;
+            GameEventBus.UpdateCountUI += UpdateUI;
         }
 
         private void OnDisable()
         {
             GameEventBus.OnWalletChange -= WalletCountChange;
             GameEventBus.OnWritingOffCount -= WritingOffWalletCount;
+            GameEventBus.UpdateCountUI -= UpdateUI;
         }
 
         private void OnDestroy()
@@ -42,18 +45,21 @@ namespace Internal.Codebase.UILogic.StoreLogic
         }
 
         private void Load(DataForSave data) => 
-            WalletCount = data.Currency;
+            YandexGame.savesData.dataForSave.Currency = data.Currency;
 
         private void WalletCountChange(int changeCount)
         {
-            WalletCount = changeCount;
-            walletText.text = $"{WalletCount}";
+            YandexGame.savesData.dataForSave.Currency = changeCount;
+            UpdateUI();
         }
         
         private void WritingOffWalletCount(int productPrice)
         {
-            WalletCount -= productPrice;
-            walletText.text = $"{WalletCount}";
+            YandexGame.savesData.dataForSave.Currency -= productPrice;
+            UpdateUI();
         }
+
+        private void UpdateUI() => 
+            walletText.text = $"{YandexGame.savesData.dataForSave.Currency}";
     }
 }

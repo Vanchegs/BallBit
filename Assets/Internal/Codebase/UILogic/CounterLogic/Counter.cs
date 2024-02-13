@@ -27,6 +27,7 @@ namespace Internal.Codebase.UILogic.CounterLogic
             GameEventBus.OnSurpriseBalloonBit += CountRandomChange;
             GameEventBus.OnOrdinaryBalloonBit += CountIncrease;
             GameEventBus.OnWritingOffCount += WritingOffCount;
+            GameEventBus.UpdateCountUI += UpdateUI;
         }
 
         private void OnDisable()
@@ -34,6 +35,7 @@ namespace Internal.Codebase.UILogic.CounterLogic
             GameEventBus.OnSurpriseBalloonBit -= CountRandomChange;
             GameEventBus.OnOrdinaryBalloonBit -= CountIncrease;
             GameEventBus.OnWritingOffCount -= WritingOffCount;
+            GameEventBus.UpdateCountUI -= UpdateUI;
         }
 
         private void OnDestroy() => 
@@ -46,7 +48,7 @@ namespace Internal.Codebase.UILogic.CounterLogic
         {
             YandexGame.savesData.dataForSave.Currency++;
             
-            countText.text = $"{YandexGame.savesData.dataForSave.Currency}";
+            UpdateUI();
             
             GameEventBus.OnWalletChange?.Invoke(YandexGame.savesData.dataForSave.Currency);
 
@@ -63,7 +65,7 @@ namespace Internal.Codebase.UILogic.CounterLogic
             YandexGame.savesData.dataForSave.Currency += changeNumber;
             
             if (YandexGame.savesData.dataForSave.Currency < 0) YandexGame.savesData.dataForSave.Currency = 0;
-            countText.text = $"{YandexGame.savesData.dataForSave.Currency}";
+            UpdateUI();
             
             GameEventBus.OnWalletChange?.Invoke(YandexGame.savesData.dataForSave.Currency);
             
@@ -74,8 +76,11 @@ namespace Internal.Codebase.UILogic.CounterLogic
         private void WritingOffCount(int productPrice)
         {
             YandexGame.savesData.dataForSave.Currency -= productPrice;
-            countText.text = $"{YandexGame.savesData.dataForSave.Currency}";
+            UpdateUI();
         }
+
+        private void UpdateUI() => 
+            countText.text = $"{YandexGame.savesData.dataForSave.Currency}";
     }
 }
     

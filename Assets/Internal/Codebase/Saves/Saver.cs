@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using Internal.Codebase.Infrastructure;
 using Internal.Codebase.UILogic.StoreLogic;
 using UnityEngine;
@@ -47,7 +46,6 @@ namespace Internal.Codebase.Saves
                 if (YandexGame.savesData.dataForSave == null)
                     FillDataForSave();
                 
-                Debug.Log(YandexGame.savesData.dataForSave.Currency + "awodnjqaweuofhnduiowe");
                 SavesData = YandexGame.savesData.dataForSave;
             }
             else
@@ -56,7 +54,6 @@ namespace Internal.Codebase.Saves
                 FillDataForSave();
             }
             
-            Debug.Log("EFSDFSEF");
             GameEventBus.OnLoaded?.Invoke(YandexGame.savesData.dataForSave);
             
             SavesData = YandexGame.savesData.dataForSave;
