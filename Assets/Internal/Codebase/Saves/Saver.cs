@@ -11,8 +11,8 @@ namespace Internal.Codebase.Saves
     public class Saver : MonoBehaviour
     {
         public static Saver Self;
-        
-        [HideInInspector] public DataForSave SavesData;
+
+        public DataForSave SavesData;
 
         [field: SerializeField] public List<Item> shopItems { get; private set; } = new();
 
@@ -46,6 +46,9 @@ namespace Internal.Codebase.Saves
             {
                 if (YandexGame.savesData.dataForSave == null)
                     FillDataForSave();
+                
+                Debug.Log(YandexGame.savesData.dataForSave.Currency + "awodnjqaweuofhnduiowe");
+                SavesData = YandexGame.savesData.dataForSave;
             }
             else
             {

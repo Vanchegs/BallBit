@@ -589,40 +589,7 @@ MonoBehaviour:
   <shopItems>k__BackingField:
   - IsBuy: 0
     ProductPrice: 1
-    Id: 1
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 2
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 3
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 4
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 5
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 6
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 7
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 8
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 9
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 10
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 11
-  - IsBuy: 0
-    ProductPrice: 1
-    Id: 12
+    Id: 0
   cooldown: 6
 --- !u!1 &507265460
 GameObject:

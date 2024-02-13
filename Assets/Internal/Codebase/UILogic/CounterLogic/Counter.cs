@@ -4,21 +4,23 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using Internal.Codebase.Infrastructure;
 using Internal.Codebase.Saves;
+using YG;
 
 namespace Internal.Codebase.UILogic.CounterLogic
 {
     [RequireComponent(typeof(TMP_Text))]
     public class Counter : MonoBehaviour
     {
-        public int Count { get; private set; }
-        
         private TMP_Text countText;
 
         private void Awake() => 
             GameEventBus.OnLoaded += Load;
 
-        private void Start() =>
+        private void Start()
+        {
             countText = GetComponent<TMP_Text>();
+            countText.text = $"{YandexGame.savesData.dataForSave.Currency}";
+        }
 
         private void OnEnable()
         {
@@ -32,24 +34,25 @@ namespace Internal.Codebase.UILogic.CounterLogic
             GameEventBus.OnSurpriseBalloonBit -= CountRandomChange;
             GameEventBus.OnOrdinaryBalloonBit -= CountIncrease;
             GameEventBus.OnWritingOffCount -= WritingOffCount;
-            
         }
 
         private void OnDestroy() => 
             GameEventBus.OnLoaded -= Load;
 
         private void Load(DataForSave data) => 
-            Count = data.Currency;
+            YandexGame.savesData.dataForSave.Currency = data.Currency;
 
         private void CountIncrease()
         {
-            Count++;
+            YandexGame.savesData.dataForSave.Currency++;
             
-            countText.text = $"{Count}";
+            countText.text = $"{YandexGame.savesData.dataForSave.Currency}";
             
-            GameEventBus.OnWalletChange?.Invoke(Count);
+            GameEventBus.OnWalletChange?.Invoke(YandexGame.savesData.dataForSave.Currency);
 
-            Saver.Self.SavesData.Currency = Count;
+            if (YandexGame.savesData.dataForSave.Currency == 0)
+                return;
+            Saver.Self.SavesData.Currency = YandexGame.savesData.dataForSave.Currency;
             Saver.Self.Save();
         }
 
@@ -57,21 +60,21 @@ namespace Internal.Codebase.UILogic.CounterLogic
         {
             var changeNumber = Random.Range(-10, 10);
             
-            Count += changeNumber;
+            YandexGame.savesData.dataForSave.Currency += changeNumber;
             
-            if (Count < 0) Count = 0;
-            countText.text = $"{Count}";
+            if (YandexGame.savesData.dataForSave.Currency < 0) YandexGame.savesData.dataForSave.Currency = 0;
+            countText.text = $"{YandexGame.savesData.dataForSave.Currency}";
             
-            GameEventBus.OnWalletChange?.Invoke(Count);
+            GameEventBus.OnWalletChange?.Invoke(YandexGame.savesData.dataForSave.Currency);
             
-            Saver.Self.SavesData.Currency = Count;
+            Saver.Self.SavesData.Currency = YandexGame.savesData.dataForSave.Currency;
             Saver.Self.Save();
         }
         
         private void WritingOffCount(int productPrice)
         {
-            Count -= productPrice;
-            countText.text = $"{Count}";
+            YandexGame.savesData.dataForSave.Currency -= productPrice;
+            countText.text = $"{YandexGame.savesData.dataForSave.Currency}";
         }
     }
 }

@@ -32,7 +32,15 @@ namespace Internal.Codebase.UILogic.StoreLogic
             if (Saver.Self.SavesData.Currency >= shopItem.ProductPrice)
             {
                 Saver.Self.SavesData.Currency -= shopItem.ProductPrice;
-                Saver.Self.SavesData.ItemsForSave.First(x => x.Id == shopItem.Id).IsBuy = true;
+                Saver.Self.SavesData.ItemsForSave.ForEach(x =>
+                {
+                    if (x.Id == shopItem.Id)
+                    {
+                        x.IsBuy = true;
+                        Debug.Log(x.IsBuy);
+                    }
+                });
+                Debug.Log(shopItem.Id);
                 UpdateUI();
                 Saver.Self.Save();
             }

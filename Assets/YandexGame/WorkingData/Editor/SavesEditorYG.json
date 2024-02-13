@@ -1,70 +1,15 @@
 {
-    "idSave": 13,
+    "idSave": 11,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
     "dataForSave": {
-        "Currency": 0,
+        "Currency": 4,
         "ItemsForSave": [
             {
-                "IsBuy": false,
+                "IsBuy": true,
                 "ProductPrice": 1,
-                "Id": 1
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 2
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 3
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 4
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 5
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 6
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 7
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 8
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 9
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 10
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 11
-            },
-            {
-                "IsBuy": false,
-                "ProductPrice": 1,
-                "Id": 12
+                "Id": 0
             }
         ]
     }
