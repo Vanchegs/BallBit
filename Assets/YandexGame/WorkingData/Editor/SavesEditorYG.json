@@ -1,10 +1,10 @@
 {
-    "idSave": 6,
+    "idSave": 67,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
     "dataForSave": {
-        "Currency": 2,
+        "Currency": 1,
         "ItemsForSave": [
             {
                 "IsBuy": true,
@@ -12,7 +12,7 @@
                 "Id": 0
             },
             {
-                "IsBuy": false,
+                "IsBuy": true,
                 "ProductPrice": 50,
                 "Id": 1
             },

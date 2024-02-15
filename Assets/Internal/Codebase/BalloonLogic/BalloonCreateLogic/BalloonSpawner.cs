@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
 using Internal.Codebase.BalloonLogic.Balloons;
 using Internal.Codebase.BalloonLogic.BalloonsConfigs;
-using Internal.Codebase.Common;
 using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
@@ -12,7 +10,6 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
     {
         private const int SurpriseBalloonsSpawnRate = 3;
         private const float BalloonsSpawnRate = 0.7f;
-        
         private const int BalloonQuantity = 10;
 
         private IBalloonFactory balloonFactory;

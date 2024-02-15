@@ -36,6 +36,7 @@ namespace Internal.Codebase.Infrastructure.Factories
             var i = Instantiate(prefab, spawnPosition);
             if (shop != null) 
                 shop.Init(i, data);
+            shop.UpdateUIFromSaves();
         }
     }
 }

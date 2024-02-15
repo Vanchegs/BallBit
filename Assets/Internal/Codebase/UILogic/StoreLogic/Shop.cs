@@ -1,7 +1,8 @@
+using YG;
+using UnityEngine;
+using Internal.Codebase.Saves;
 using System.Collections.Generic;
 using Internal.Codebase.Infrastructure;
-using Internal.Codebase.Saves;
-using UnityEngine;
 
 namespace Internal.Codebase.UILogic.StoreLogic
 {
@@ -18,8 +19,8 @@ namespace Internal.Codebase.UILogic.StoreLogic
             var shopView = FindObjectOfType<ShopView>();
 
             shopItems = new(shopView.shopItems);
-            
-            foreach (var item in shopItems) 
+
+            foreach (var item in shopItems)
                 item.shopSign.Button.onClick.AddListener(((() => Buy(item))));
 
             InitShop(dataForSave.ItemsForSave);
@@ -38,8 +39,10 @@ namespace Internal.Codebase.UILogic.StoreLogic
                         Debug.Log(x.IsBuy);
                     }
                 });
-                UpdateUI();
+                shopItem.shopSign.Button.gameObject.SetActive(false);
                 GameEventBus.UpdateCountUI?.Invoke();
+                UpdateUIFromSaves();
+                UpdateUI();
                 Saver.Self.Save();
             }
         }
@@ -58,7 +61,6 @@ namespace Internal.Codebase.UILogic.StoreLogic
                             shopItem.shopSign.nameStoreSign.gameObject.SetActive(true);
                             shopItem.shopSign.descriptionStoreSign.gameObject.SetActive(true);
                             shopItem.shopSign.imageOfProduct.gameObject.SetActive(true);
-                            UpdateUI();
                         }
                     }
                 }
@@ -79,6 +81,23 @@ namespace Internal.Codebase.UILogic.StoreLogic
                             shopItem.shopSign.nameStoreSign.gameObject.SetActive(true);
                             shopItem.shopSign.descriptionStoreSign.gameObject.SetActive(true);
                             shopItem.shopSign.imageOfProduct.gameObject.SetActive(true);
+                        }
+                    }
+                }
+            }
+        }
+
+        public void UpdateUIFromSaves()
+        {
+            foreach (var shopItem in shopItems)
+            {
+                foreach (var item in YandexGame.savesData.dataForSave.ItemsForSave)
+                {
+                    if (item.Id == shopItem.Id)
+                    {
+                        if (item.IsBuy)
+                        {
+                            shopItem.shopSign.Button.gameObject.SetActive(false);
                         }
                     }
                 }
