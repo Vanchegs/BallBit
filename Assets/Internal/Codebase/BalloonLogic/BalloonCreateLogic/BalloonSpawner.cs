@@ -11,7 +11,8 @@ namespace Internal.Codebase.BalloonLogic.BalloonCreateLogic
     public class BalloonSpawner : MonoBehaviour
     {
         private const int SurpriseBalloonsSpawnRate = 3;
-        private const int BalloonsSpawnRate = 1;
+        private const float BalloonsSpawnRate = 0.7f;
+        
         private const int BalloonQuantity = 10;
 
         private IBalloonFactory balloonFactory;

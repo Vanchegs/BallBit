@@ -1,4 +1,3 @@
-using Internal.Codebase.Infrastructure;
 using UnityEngine;
 
 namespace Internal.Codebase.UILogic.StoreLogic

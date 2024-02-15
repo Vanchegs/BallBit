@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using Internal.Codebase.Infrastructure;
 using Internal.Codebase.Saves;
 using UnityEngine;
@@ -8,7 +7,7 @@ namespace Internal.Codebase.UILogic.StoreLogic
 {
     public class Shop : MonoBehaviour
     {
-        private List<ShopItem> shopItems= new();
+        private List<ShopItem> shopItems = new();
 
         public void Init(GameObject canvas, DataForSave dataForSave)
         {
@@ -20,11 +19,9 @@ namespace Internal.Codebase.UILogic.StoreLogic
 
             shopItems = new(shopView.shopItems);
             
-            foreach (var item in shopItems)
-            {
+            foreach (var item in shopItems) 
                 item.shopSign.Button.onClick.AddListener(((() => Buy(item))));
-            }
-            
+
             InitShop(dataForSave.ItemsForSave);
         }
 
@@ -61,13 +58,14 @@ namespace Internal.Codebase.UILogic.StoreLogic
                             shopItem.shopSign.nameStoreSign.gameObject.SetActive(true);
                             shopItem.shopSign.descriptionStoreSign.gameObject.SetActive(true);
                             shopItem.shopSign.imageOfProduct.gameObject.SetActive(true);
+                            UpdateUI();
                         }
                     }
                 }
             }
         }
 
-        private void UpdateUI()
+        public void UpdateUI()
         {
             foreach (var shopItem in shopItems)
             {

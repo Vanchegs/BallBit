@@ -34,10 +34,8 @@ namespace Internal.Codebase.Infrastructure.Factories
             shop = FindObjectOfType<Shop>(true);
             Debug.Log(shop == null);
             var i = Instantiate(prefab, spawnPosition);
-            if (shop != null)
-            {
+            if (shop != null) 
                 shop.Init(i, data);
-            }
         }
     }
 }

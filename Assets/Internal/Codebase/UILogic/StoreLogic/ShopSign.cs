@@ -7,13 +7,13 @@ namespace Internal.Codebase.UILogic.StoreLogic
     public class ShopSign : MonoBehaviour
     {
         public Button Button;
-        
+
         private ShopItem shopItem;
-        
+
         public TMP_Text nameStoreSign;
         public TMP_Text descriptionStoreSign;
         public TMP_Text buyButtonText;
-        
+
         public Image imageOfProduct;
 
         private void Start()
@@ -23,7 +23,7 @@ namespace Internal.Codebase.UILogic.StoreLogic
             SettingPrice();
         }
 
-        private void SettingPrice() => 
+        private void SettingPrice() =>
             buyButtonText.text = $"{shopItem.ProductPrice}";
     }
 }

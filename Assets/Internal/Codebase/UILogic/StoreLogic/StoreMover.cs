@@ -1,7 +1,6 @@
-
-using System.Threading.Tasks;
 using DG.Tweening;
 using UnityEngine;
+using YG;
 
 namespace Internal.Codebase.UILogic.StoreLogic
 {
@@ -9,7 +8,6 @@ namespace Internal.Codebase.UILogic.StoreLogic
     {
         private bool isStoreActivate;
 
-        [SerializeField] private GameObject storeCatalog;
         [SerializeField] private RectTransform startPosition;
         [SerializeField] private RectTransform finalPosition;
 
@@ -19,6 +17,7 @@ namespace Internal.Codebase.UILogic.StoreLogic
             {
                 transform.DOMoveX(finalPosition.position.x, 1, false);
                 isStoreActivate = true;
+                YandexGame.FullscreenShow();
             }
             else
             {
