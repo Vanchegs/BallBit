@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="51d5c777-bec9-4887-bcd3-7ed234ad99ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/BalloonLogic/BalloonCreateLogic/BalloonSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/BalloonLogic/BalloonCreateLogic/BalloonSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/Factories/UIFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/Factories/UIFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Saves/Saver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/Saves/Saver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/Shop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/Editor/SavesEditorYG.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/Editor/SavesEditorYG.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Standalone Player.Start Unity">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\GitHub\BallBit -debugCodeOptimization" />
@@ -295,6 +294,7 @@
       <workItem from="1707943729480" duration="2495000" />
       <workItem from="1708011390983" duration="2721000" />
       <workItem from="1708025894385" duration="4897000" />
+      <workItem from="1708182717570" duration="7353000" />
     </task>
     <servers />
   </component>

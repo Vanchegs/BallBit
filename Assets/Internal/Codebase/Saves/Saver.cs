@@ -56,7 +56,7 @@ namespace Internal.Codebase.Saves
             
             GameEventBus.OnLoaded?.Invoke(YandexGame.savesData.dataForSave);
             
-            SavesData = YandexGame.savesData.dataForSave;
+            //SavesData = YandexGame.savesData.dataForSave;
 
             if (coroutine == null)
                 coroutine = StartCoroutine(AutoSaver());
