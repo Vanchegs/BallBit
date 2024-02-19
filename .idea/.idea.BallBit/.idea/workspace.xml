@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51d5c777-bec9-4887-bcd3-7ed234ad99ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/StoreLogic/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/Editor/SavesEditorYG.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/Editor/SavesEditorYG.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/GameCanvas.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,6 +293,7 @@
       <workItem from="1708025894385" duration="4897000" />
       <workItem from="1708182717570" duration="7353000" />
       <workItem from="1708265305170" duration="524000" />
+      <workItem from="1708316102290" duration="1276000" />
     </task>
     <servers />
   </component>
