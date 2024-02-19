@@ -82,6 +82,12 @@ namespace Internal.Codebase.UILogic.StoreLogic
                             shopItem.shopSign.imageOfProduct.gameObject.SetActive(true);
                             Debug.Log(item.IsBuy);
                         }
+                        else
+                        {
+                            shopItem.shopSign.nameStoreSign.gameObject.SetActive(false);
+                            shopItem.shopSign.descriptionStoreSign.gameObject.SetActive(false);
+                            shopItem.shopSign.imageOfProduct.gameObject.SetActive(false);
+                        }
                     }
                 }
             }
