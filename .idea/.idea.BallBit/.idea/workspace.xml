@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51d5c777-bec9-4887-bcd3-7ed234ad99ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/[COMMON]/Prefabs/GameCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/AudioController/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/AudioController/AudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/Editor/SavesEditorYG.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/Editor/SavesEditorYG.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Common/CameraAdapter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Common/ImmortalGameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Common/ImmortalGo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Common/SavesDeleter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Infrastructure/GameEventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/Saves/DataForSave.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Internal/Codebase/UILogic/CounterLogic/Counter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -294,6 +295,7 @@
       <workItem from="1708182717570" duration="7353000" />
       <workItem from="1708265305170" duration="524000" />
       <workItem from="1708316102290" duration="1276000" />
+      <workItem from="1708550596382" duration="2935000" />
     </task>
     <servers />
   </component>

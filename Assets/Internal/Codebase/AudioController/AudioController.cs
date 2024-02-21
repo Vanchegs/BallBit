@@ -12,7 +12,15 @@ namespace Internal.Codebase.AudioController
         private void Start() => 
             PlayMusic();
 
-        private void PlayMusic() =>
-            sourceAudio.Play(MusicName, 10);
+        public void PlayMusic() =>
+            sourceAudio.Play(MusicName, 100);
+
+        public void PauseMusic(bool isPause)
+        {
+            if (isPause) 
+                sourceAudio.Pause();
+            else
+                sourceAudio.UnPause();
+        }
     }
 }
