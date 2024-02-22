@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51d5c777-bec9-4887-bcd3-7ed234ad99ef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BallBit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/AudioController/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Internal/Codebase/AudioController/AudioController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/Editor/SavesEditorYG.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YandexGame/WorkingData/Editor/SavesEditorYG.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/AudioController.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/AudioController/AudioController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/AudioController/AudioController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Common/AppFocus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Internal/Codebase/Common/AppFocus.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,6 +298,7 @@
       <workItem from="1708265305170" duration="524000" />
       <workItem from="1708316102290" duration="1276000" />
       <workItem from="1708550596382" duration="2935000" />
+      <workItem from="1708561137598" duration="629000" />
     </task>
     <servers />
   </component>
