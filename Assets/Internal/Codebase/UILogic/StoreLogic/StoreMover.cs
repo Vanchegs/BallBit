@@ -15,13 +15,13 @@ namespace Internal.Codebase.UILogic.StoreLogic
         {
             if (isStoreActivate == false)
             {
-                transform.DOMoveX(finalPosition.position.x, 1, false);
+                transform.DOMoveX(finalPosition.position.x, 1.5f, false);
                 isStoreActivate = true;
                 YandexGame.FullscreenShow();
             }
             else
             {
-                transform.DOMoveX(startPosition.position.x, 1, false);
+                transform.DOMoveX(startPosition.position.x, 1.5f, false);
                 isStoreActivate = false;
             }
         }
