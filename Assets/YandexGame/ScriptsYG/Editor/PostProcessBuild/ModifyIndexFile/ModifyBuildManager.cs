@@ -42,7 +42,7 @@ namespace YG.EditorScr.BuildModify
         [MenuItem("Tools/PluginYG/Modify Index", false)]
         public static void ModifyIndex()
         {
-            string buildPatch = BuildLog.ReadProperty("Build path");
+            string buildPatch = YGBuildLog.ReadProperty("Build path");
 
             if (buildPatch != null)
             {
